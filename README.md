@@ -10,7 +10,7 @@ S.E.T. means Sustainable Employment and Training. The cooperative is presented a
 
 - Repository name: [`ready-set-cultural-intelligence-node`](https://github.com/auraofintelligence/ready-set-cultural-intelligence-node).
 - Public site: [Ready S.E.T. Cultural Intelligence Node](https://auraofintelligence.github.io/ready-set-cultural-intelligence-node/).
-- First complete website package: 2 September 2026.
+- First complete website package: 2 September 2026, at commit [`3cd8750`](https://github.com/auraofintelligence/ready-set-cultural-intelligence-node/commit/3cd8750e43a330e9877e3f9a56b58f31656f16a5).
 - Relationship to the earlier site: a new, separate repository with a tighter focus on the Dunwich rack example, cultural collaboration and decentralised intelligence.
 - Status: working public concept by Luke Nathan Hayes; no claimed endorsement by any First Nation, organisation, council or government.
 
