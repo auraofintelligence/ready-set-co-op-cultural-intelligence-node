@@ -85,6 +85,8 @@ for (const icon of ['assets/favicon-32.png', 'assets/favicon-192.png', 'assets/a
 }
 
 const sitemap = fs.readFileSync(path.join(root, 'sitemap.xml'), 'utf8');
+const stylesheet = fs.readFileSync(path.join(root, 'assets', 'styles.css'), 'utf8');
+if (/\.reveal\s*\{[^}]*opacity\s*:\s*0(?:\D|$)/i.test(stylesheet)) errors.push('styles.css: meaningful content is hidden until JavaScript runs');
 for (const page of pages) {
   const route = page === 'index.html' ? 'ready-set-co-op-cultural-intelligence-node/' : `ready-set-co-op-cultural-intelligence-node/${page}`;
   if (!sitemap.includes(route)) errors.push(`sitemap.xml: missing ${page}`);
