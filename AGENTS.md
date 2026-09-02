@@ -10,6 +10,7 @@ This repository presents a working exploration of one Dunwich rack-scale intelli
 - Plain language.
 - Invitational and exploratory phrasing.
 - No commands to the reader.
+- No timid, defensive or self-diminishing framing. Words such as "smallest", "safest", "modest", "narrow" and "least" are treated as seriously as authority language. Use confident, grounded descriptions without shrinking the idea or directing the audience.
 - No claims to speak for a First Nation, family, cultural body, organisation, council or government.
 - Sovereignty is not framed as something granted by the technology.
 - The cooperative is not framed as cultural authority.
@@ -31,7 +32,7 @@ This repository presents a working exploration of one Dunwich rack-scale intelli
 - Every public page appears in the header and sitemap.
 - Every public page contains previous and next route links in the footer.
 - Every public page contains a floating return-to-top control.
-- External links open in a new window with safe relationship attributes.
+- External links open in a new window with secure relationship attributes.
 - Internal links stay in the same window.
 
 ## Content boundaries

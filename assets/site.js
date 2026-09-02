@@ -39,6 +39,9 @@
   });
 
   const reveal = document.querySelectorAll('.reveal');
+  document.querySelectorAll('.three-grid, .four-grid, .question-grid, .portal-grid, .use-grid, .sitemap-grid').forEach(grid => {
+    [...grid.children].forEach((card, index) => card.style.setProperty('--card-index', index));
+  });
   if (reduced || !('IntersectionObserver' in window)) {
     reveal.forEach(item => item.classList.add('visible'));
   } else {

@@ -59,6 +59,7 @@ for (const page of heroPages) {
   if (!/<div class="wrap route-nav">/.test(html)) errors.push(`${page}: missing previous and next navigation`);
   if (/<p class="eyebrow"|class="eyebrow"/.test(html)) errors.push(`${page}: contains a decorative eyebrow label`);
   if (/\b(?:can|should|must)\b/i.test(stripMarkup(html))) errors.push(`${page}: contains directive or permission language`);
+  if (/\b(?:small|smaller|smallest|safe|safer|safest|modest|narrow|minimal|least|timid)\b/i.test(stripMarkup(html))) errors.push(`${page}: contains timid or self-diminishing language`);
   for (const expected of expectedNav) {
     if (!html.includes(expected)) errors.push(`${page}: header omits ${expected.slice(6, -1)}`);
   }
@@ -105,4 +106,4 @@ if (errors.length) {
 }
 
 console.log(`Checked ${pages.length} main pages, 404.html, ${allFiles.length} repository files and ${heroHashes.size} unique local raster heroes.`);
-console.log('Confirmed: complete navigation, safe external links, raster favicons, no remote images, no vector references, no decorative eyebrows, no directive or permission language, and no en dashes or em dashes.');
+console.log('Confirmed: complete navigation, secure external links, raster favicons, no remote images, no vector references, no decorative eyebrows, no directive or permission language, no timid framing, and no en dashes or em dashes.');
