@@ -1,2 +1,216 @@
+(() => {
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const header = document.querySelector('[data-site-header]');
+  const menuButton = document.querySelector('[data-menu-button]');
+  const menu = document.querySelector('[data-site-nav]');
+  const toTop = document.querySelector('[data-to-top]');
 
-(()=>{const d=document,w=window,root=d.documentElement,reduce=w.matchMedia('(prefers-reduced-motion: reduce)').matches;const header=d.querySelector('[data-header]'),top=d.querySelector('.to-top');const onScroll=()=>{header?.classList.toggle('scrolled',w.scrollY>20);top?.classList.toggle('visible',w.scrollY>520)};w.addEventListener('scroll',onScroll,{passive:true});onScroll();const toggle=d.querySelector('.menu-toggle'),nav=d.querySelector('.site-nav');toggle?.addEventListener('click',()=>{const open=!nav.classList.contains('open');nav.classList.toggle('open',open);toggle.setAttribute('aria-expanded',String(open))});nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle?.setAttribute('aria-expanded','false')}));d.querySelectorAll('a[href^="http"]').forEach(a=>{a.target='_blank';a.rel='noopener noreferrer'});d.querySelectorAll('.hero-image').forEach(img=>img.addEventListener('error',()=>img.classList.add('image-missing')));if(!reduce){d.addEventListener('pointermove',e=>{root.style.setProperty('--mouse-x',e.clientX+'px');root.style.setProperty('--mouse-y',e.clientY+'px');d.querySelectorAll('.glow-surface:hover,.card:hover').forEach(el=>{const r=el.getBoundingClientRect();el.style.setProperty('--surface-x',(e.clientX-r.left)+'px');el.style.setProperty('--surface-y',(e.clientY-r.top)+'px')})},{passive:true});d.querySelectorAll('.magnetic').forEach(el=>{el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect(),x=(e.clientX-r.left-r.width/2)*.12,y=(e.clientY-r.top-r.height/2)*.16;el.style.transform=`translate(${x}px,${y}px)`});el.addEventListener('pointerleave',()=>el.style.transform='')});d.querySelectorAll('[data-tilt]').forEach(el=>{el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;el.style.transform=`perspective(700px) rotateX(${y*-4}deg) rotateY(${x*5}deg) translateY(-4px)`});el.addEventListener('pointerleave',()=>el.style.transform='')});const hero=d.querySelector('[data-hero]');hero?.addEventListener('pointermove',e=>{const r=hero.getBoundingClientRect();hero.style.setProperty('--hero-x',((e.clientX-r.left)/r.width*100)+'%');hero.style.setProperty('--hero-y',((e.clientY-r.top)/r.height*100)+'%')});const obs=new IntersectionObserver(entries=>entries.forEach(x=>x.isIntersecting&&x.target.classList.add('revealed')),{threshold:.11});d.querySelectorAll('[data-reveal]').forEach(el=>obs.observe(el));ambient();network()}else d.querySelectorAll('[data-reveal]').forEach(el=>el.classList.add('revealed'));d.querySelectorAll('[data-mixer]').forEach(box=>{const inputs=[...box.querySelectorAll('[data-mix]')],total=box.querySelector('[data-mixer-total]');const update=()=>{let sum=0;inputs.forEach(i=>{sum+=+i.value;i.nextElementSibling.value=i.value});total.textContent=sum};inputs.forEach(i=>i.addEventListener('input',update));update()});const filter=d.querySelector('[data-filter]');filter?.addEventListener('click',e=>{const b=e.target.closest('[data-filter-value]');if(!b)return;filter.querySelectorAll('.filter').forEach(x=>x.classList.toggle('active',x===b));const v=b.dataset.filterValue;d.querySelectorAll('[data-category]').forEach(c=>c.classList.toggle('hidden',v!=='all'&&c.dataset.category!==v))});d.querySelectorAll('[data-twin]').forEach(twin=>twin.addEventListener('click',e=>{const b=e.target.closest('[data-layer]');if(!b)return;const key=b.dataset.layer;b.classList.toggle('active');twin.querySelector(`[data-map-layer="${key}"]`)?.classList.toggle('active',b.classList.contains('active'))}));function ambient(){const c=d.querySelector('[data-ambient]');if(!c)return;const x=c.getContext('2d');let W,H,pts;const resize=()=>{W=c.width=w.innerWidth*devicePixelRatio;H=c.height=w.innerHeight*devicePixelRatio;c.style.width=w.innerWidth+'px';c.style.height=w.innerHeight+'px';pts=Array.from({length:Math.min(90,Math.floor(w.innerWidth/14))},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.14*devicePixelRatio,vy:(Math.random()-.5)*.14*devicePixelRatio,r:(Math.random()*1.5+.4)*devicePixelRatio}))};resize();w.addEventListener('resize',resize);const draw=()=>{x.clearRect(0,0,W,H);pts.forEach((p,i)=>{p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1;x.beginPath();x.arc(p.x,p.y,p.r,0,Math.PI*2);x.fillStyle='rgba(185,220,255,.42)';x.fill();for(let j=i+1;j<pts.length;j++){const q=pts[j],dx=p.x-q.x,dy=p.y-q.y,dist=Math.hypot(dx,dy),limit=135*devicePixelRatio;if(dist<limit){x.beginPath();x.moveTo(p.x,p.y);x.lineTo(q.x,q.y);x.strokeStyle=`rgba(110,180,255,${(1-dist/limit)*.09})`;x.stroke()}}});requestAnimationFrame(draw)};draw()}function network(){const stage=d.querySelector('[data-network]'),c=stage?.querySelector('canvas');if(!c)return;const x=c.getContext('2d');let W,H,nodes;const resize=()=>{const r=stage.getBoundingClientRect();W=c.width=r.width*devicePixelRatio;H=c.height=r.height*devicePixelRatio;c.style.width=r.width+'px';c.style.height=r.height+'px';nodes=Array.from({length:34},(_,i)=>({a:Math.random()*Math.PI*2,rad:(.12+Math.random()*.38)*Math.min(W,H),s:(.0004+Math.random()*.001)*(i%2?1:-1),size:(2+Math.random()*4)*devicePixelRatio}))};resize();w.addEventListener('resize',resize);const draw=()=>{x.clearRect(0,0,W,H);const cx=W/2,cy=H/2;nodes.forEach((n,i)=>{n.a+=n.s;const px=cx+Math.cos(n.a)*n.rad,py=cy+Math.sin(n.a)*n.rad*.64;x.beginPath();x.moveTo(cx,cy);x.lineTo(px,py);x.strokeStyle='rgba(95,232,220,.12)';x.stroke();x.beginPath();x.arc(px,py,n.size,0,Math.PI*2);x.fillStyle=i%3===0?'rgba(255,220,110,.9)':i%3===1?'rgba(90,240,215,.85)':'rgba(100,150,255,.85)';x.shadowBlur=18*devicePixelRatio;x.shadowColor=x.fillStyle;x.fill();x.shadowBlur=0});requestAnimationFrame(draw)};draw()}})();
+  const setScrollState = () => {
+    const moved = window.scrollY > 32;
+    header?.classList.toggle('scrolled', moved);
+    toTop?.classList.toggle('visible', window.scrollY > window.innerHeight * .7);
+  };
+  setScrollState();
+  window.addEventListener('scroll', setScrollState, { passive: true });
+
+  menuButton?.addEventListener('click', () => {
+    const open = menuButton.getAttribute('aria-expanded') === 'true';
+    menuButton.setAttribute('aria-expanded', String(!open));
+    menu?.classList.toggle('open', !open);
+    document.body.classList.toggle('menu-open', !open);
+  });
+  menu?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+    menuButton?.setAttribute('aria-expanded', 'false');
+    menu?.classList.remove('open');
+    document.body.classList.remove('menu-open');
+  }));
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') {
+      menuButton?.setAttribute('aria-expanded', 'false');
+      menu?.classList.remove('open');
+      document.body.classList.remove('menu-open');
+    }
+  });
+  toTop?.addEventListener('click', () => window.scrollTo({ top: 0, behaviour: reduced ? 'auto' : 'smooth', behavior: reduced ? 'auto' : 'smooth' }));
+
+  document.querySelectorAll('a[href^="http"]').forEach(link => {
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+  });
+
+  const reveal = document.querySelectorAll('.reveal');
+  if (reduced || !('IntersectionObserver' in window)) {
+    reveal.forEach(item => item.classList.add('visible'));
+  } else {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: .12 });
+    reveal.forEach(item => observer.observe(item));
+  }
+
+  if (!reduced && matchMedia('(pointer: fine)').matches) {
+    const hero = document.querySelector('[data-hero]');
+    hero?.addEventListener('pointermove', event => {
+      const rect = hero.getBoundingClientRect();
+      hero.style.setProperty('--mx', `${((event.clientX - rect.left) / rect.width) * 100}%`);
+      hero.style.setProperty('--my', `${((event.clientY - rect.top) / rect.height) * 100}%`);
+      const image = hero.querySelector('.hero-image');
+      if (image) {
+        const x = ((event.clientX - rect.left) / rect.width - .5) * -10;
+        const y = ((event.clientY - rect.top) / rect.height - .5) * -7;
+        image.style.translate = `${x}px ${y}px`;
+      }
+    });
+    hero?.addEventListener('pointerleave', () => {
+      const image = hero.querySelector('.hero-image');
+      if (image) image.style.translate = '0 0';
+    });
+
+    document.querySelectorAll('.magnetic').forEach(button => {
+      button.addEventListener('pointermove', event => {
+        const rect = button.getBoundingClientRect();
+        button.style.setProperty('--px', `${(event.clientX - rect.left - rect.width / 2) * .13}px`);
+        button.style.setProperty('--py', `${(event.clientY - rect.top - rect.height / 2) * .18}px`);
+      });
+      button.addEventListener('pointerleave', () => {
+        button.style.setProperty('--px', '0px');
+        button.style.setProperty('--py', '0px');
+      });
+    });
+  }
+
+  const permissionCopy = {
+    public: ['Public material', 'Material intentionally released for broad access, with provenance, attribution and reuse terms still attached.'],
+    purpose: ['Purpose-shared material', 'Material shared for a stated activity, people and period. A new use returns to a new conversation.'],
+    group: ['Group-held material', 'Access remains with a family, organisation or cultural group under its own protocols and responsibilities.'],
+    human: ['Human-only knowledge', 'Knowledge or relationship kept outside digital systems. Its value does not depend on machine access.'],
+    unknown: ['Unresolved material', 'Material whose rights, provenance or appropriate use are unclear stays separate until people with standing resolve it.']
+  };
+  const permissionBoard = document.querySelector('[data-permission-board]');
+  permissionBoard?.querySelectorAll('[data-layer]').forEach(tab => tab.addEventListener('click', () => {
+    permissionBoard.querySelectorAll('[data-layer]').forEach(item => item.classList.toggle('active', item === tab));
+    const [heading, copy] = permissionCopy[tab.dataset.layer];
+    const target = permissionBoard.querySelector('[data-layer-copy]');
+    target.innerHTML = `<h3>${heading}</h3><p>${copy}</p>`;
+  }));
+
+  const roleCopy = {
+    operator: ['Node operations', 'Monitoring, access, backups, incident records, service priorities and recovery practice.'],
+    media: ['Media production', 'Editing, colour, sound, rendering, animation and immersive work around local stories and projects.'],
+    data: ['Data stewardship', 'Provenance, storage, access records, retention, exports and recovery across distinct permission layers.'],
+    culture: ['Cultural review', 'Review by people who hold the relevant relationships and authority for the particular material or activity.'],
+    learning: ['Learning support', 'Supported practice, peer exchange, technical explanation and pathways into useful project work.'],
+    field: ['Field observation', 'Collection and interpretation of suitable environmental, infrastructure and community observations.'],
+    care: ['Maintenance and care', 'Cleaning, spares, cooling, energy, safety, vendor relationships and long-term equipment attention.']
+  };
+  const roleWheel = document.querySelector('[data-role-wheel]');
+  roleWheel?.querySelectorAll('[data-role]').forEach(button => button.addEventListener('click', () => {
+    roleWheel.querySelectorAll('[data-role]').forEach(item => item.classList.toggle('active', item === button));
+    const [heading, copy] = roleCopy[button.dataset.role];
+    roleWheel.querySelector('[data-role-copy]').innerHTML = `<h3>${heading}</h3><p>${copy}</p>`;
+  }));
+
+  const fitCanvas = canvas => {
+    const ratio = Math.min(window.devicePixelRatio || 1, 2);
+    const rect = canvas.getBoundingClientRect();
+    const width = Math.max(1, Math.round(rect.width * ratio));
+    const height = Math.max(1, Math.round(rect.height * ratio));
+    if (canvas.width !== width || canvas.height !== height) {
+      canvas.width = width;
+      canvas.height = height;
+    }
+    return { width, height, ratio };
+  };
+
+  const ambient = document.querySelector('[data-ambient-canvas]');
+  if (ambient && !reduced) {
+    const context = ambient.getContext('2d');
+    const motes = Array.from({ length: 22 }, (_, index) => ({
+      x: (index * 73 % 100) / 100,
+      y: (index * 41 % 100) / 100,
+      r: 1 + (index % 4) * .6,
+      speed: .0007 + (index % 5) * .00015
+    }));
+    const draw = time => {
+      const { width, height } = fitCanvas(ambient);
+      context.clearRect(0, 0, width, height);
+      motes.forEach((mote, index) => {
+        const y = (mote.y + time * mote.speed * .001) % 1;
+        const x = mote.x + Math.sin(time * .0003 + index) * .015;
+        context.beginPath();
+        context.fillStyle = index % 3 === 0 ? 'rgba(255,112,220,.65)' : index % 3 === 1 ? 'rgba(85,228,226,.65)' : 'rgba(255,201,79,.55)';
+        context.arc(x * width, y * height, mote.r * (window.devicePixelRatio || 1), 0, Math.PI * 2);
+        context.fill();
+      });
+      requestAnimationFrame(draw);
+    };
+    requestAnimationFrame(draw);
+  }
+
+  const twinCanvas = document.querySelector('[data-twin-canvas]');
+  if (twinCanvas) {
+    const context = twinCanvas.getContext('2d');
+    const colours = { coast: '#6fffd2', water: '#61a8ff', movement: '#ffcf63', infrastructure: '#ff76c9', culture: '#ae86ff' };
+    const drawTwin = time => {
+      const { width, height } = fitCanvas(twinCanvas);
+      context.clearRect(0, 0, width, height);
+      const active = [...document.querySelectorAll('[data-twin-layer]:checked')].map(input => input.dataset.twinLayer);
+      active.forEach((layer, layerIndex) => {
+        context.strokeStyle = colours[layer];
+        context.globalAlpha = .45;
+        context.lineWidth = 1.4 * (window.devicePixelRatio || 1);
+        for (let line = 0; line < 5; line++) {
+          context.beginPath();
+          for (let x = 0; x <= width; x += 12) {
+            const base = height * (.22 + layerIndex * .13) + line * 9;
+            const y = base + Math.sin(x * .018 + time * .0007 + line + layerIndex) * (10 + layerIndex * 2);
+            x === 0 ? context.moveTo(x, y) : context.lineTo(x, y);
+          }
+          context.stroke();
+        }
+      });
+      context.globalAlpha = 1;
+      if (!reduced) requestAnimationFrame(drawTwin);
+    };
+    drawTwin(0);
+    document.querySelectorAll('[data-twin-layer]').forEach(input => input.addEventListener('change', () => reduced && drawTwin(0)));
+  }
+
+  const networkCanvas = document.querySelector('[data-network-canvas]');
+  if (networkCanvas) {
+    const context = networkCanvas.getContext('2d');
+    const nodes = Array.from({ length: 17 }, (_, index) => ({
+      x: .08 + ((index * 47) % 84) / 100,
+      y: .1 + ((index * 31) % 80) / 100,
+      radius: 5 + index % 5,
+      phase: index * .7
+    }));
+    const drawNetwork = time => {
+      const { width, height } = fitCanvas(networkCanvas);
+      context.clearRect(0, 0, width, height);
+      const points = nodes.map(node => ({ x: (node.x + Math.sin(time * .0002 + node.phase) * .01) * width, y: (node.y + Math.cos(time * .00023 + node.phase) * .012) * height, radius: node.radius }));
+      context.lineWidth = 1;
+      points.forEach((point, index) => points.slice(index + 1).forEach(other => {
+        const distance = Math.hypot(point.x - other.x, point.y - other.y);
+        if (distance < width * .23) {
+          context.strokeStyle = `rgba(104,225,224,${Math.max(0, .32 - distance / width)})`;
+          context.beginPath();context.moveTo(point.x, point.y);context.lineTo(other.x, other.y);context.stroke();
+        }
+      }));
+      points.forEach((point, index) => {
+        const gradient = context.createRadialGradient(point.x, point.y, 0, point.x, point.y, point.radius * 5);
+        const colour = index % 3 === 0 ? '255,112,220' : index % 3 === 1 ? '85,228,226' : '255,201,79';
+        gradient.addColorStop(0, `rgba(${colour},1)`);gradient.addColorStop(1, `rgba(${colour},0)`);
+        context.fillStyle = gradient;context.beginPath();context.arc(point.x, point.y, point.radius * 5, 0, Math.PI * 2);context.fill();
+        context.fillStyle = '#fff';context.beginPath();context.arc(point.x, point.y, point.radius, 0, Math.PI * 2);context.fill();
+      });
+      if (!reduced) requestAnimationFrame(drawNetwork);
+    };
+    drawNetwork(0);
+  }
+})();

@@ -1,20 +1,22 @@
 {
   "name": "Ready S.E.T. Co-op Cultural Intelligence Node",
-  "short_name": "Ready S.E.T. Node",
+  "short_name": "Ready S.E.T. Co-op",
+  "description": "A self-sovereign exploration of one local cultural compute node.",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#070812",
-  "theme_color": "#070812",
+  "background_color": "#090912",
+  "theme_color": "#090912",
   "icons": [
     {
-      "src": "https://auraofintelligence.github.io/grain-by-grain-documentary/assets/img/favicon-192.png",
+      "src": "assets/favicon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://auraofintelligence.github.io/grain-by-grain-documentary/assets/img/favicon-512.png",
-      "sizes": "512x512",
-      "type": "image/png"
+      "src": "assets/favicon.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any"
     }
   ]
 }

@@ -1,7 +1,7 @@
 # GitHub About settings
 
-Description: One Dunwich GB200-class rack example for cultural collaboration, local models, an island digital twin and a global network of decentralised intelligences.
+Description: One local cultural compute node: a practical, repeatable plan for collaboration, useful workloads and chosen connections.
 
 Website: https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/
 
-Topics: australia, minjerribah, dunwich, indigenous-data-sovereignty, decentralised-intelligence, digital-twin, community-compute, cooperative, multimodal-models, cultural-collaboration, sovereign-technology
+Topics: australia, minjerribah, dunwich, indigenous-data-sovereignty, decentralised-intelligence, digital-twin, community-compute, cooperative, cultural-collaboration, local-compute, sovereign-technology

@@ -1,22 +1,19 @@
-# Publish at the new address
+# Publishing record
 
 Repository: `auraofintelligence/ready-set-co-op-cultural-intelligence-node`
 
 Public site: `https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/`
 
-## GitHub website route
+The public repository and GitHub Pages address already exist. A publish is complete only after the branch is pushed, the Pages workflow reports success and the anonymous public address returns the new version.
 
-1. Create a new public repository named `ready-set-co-op-cultural-intelligence-node` without adding starter files.
-2. Upload the contents of this folder to the repository root, or push the included Git history.
-3. Open **Settings → Pages**.
-4. Select **Deploy from a branch**, branch **main**, folder **/(root)**.
-5. Add the description, website and topics from `GITHUB-ABOUT.md` to the repository About panel.
+## GitHub Pages settings
 
-## Command-line route
+Source: branch `main`, folder `/(root)`.
+
+## Normal update
 
 ```bash
-git remote add origin https://github.com/auraofintelligence/ready-set-co-op-cultural-intelligence-node.git
-git push -u origin main
+git push origin main
 ```
 
-The `.nojekyll`, `robots.txt`, `sitemap.xml`, raster favicon links and page metadata are already included.
+The `.nojekyll`, `robots.txt`, `sitemap.xml`, local raster favicon links and page metadata are included.
