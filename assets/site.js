@@ -96,27 +96,6 @@
     });
   };
 
-  const boundaryExplorer = document.querySelector('[data-boundary-explorer]');
-  if (boundaryExplorer) {
-    const buttons = [...boundaryExplorer.querySelectorAll('[data-boundary-mode]')];
-    const panels = [...boundaryExplorer.querySelectorAll('[data-boundary-panel]')];
-    boundaryExplorer.querySelectorAll('.material-route').forEach(route => {
-      [...route.children].forEach((step, index) => step.style.setProperty('--route-index', index));
-    });
-    const showBoundary = key => {
-      buttons.forEach(button => {
-        const active = button.dataset.boundaryMode === key;
-        button.classList.toggle('active', active);
-        button.setAttribute('aria-pressed', String(active));
-      });
-      panels.forEach(panel => { panel.hidden = panel.dataset.boundaryPanel !== key; });
-    };
-    boundaryExplorer.classList.add('is-enhanced');
-    buttons.forEach(button => button.addEventListener('click', () => showBoundary(button.dataset.boundaryMode)));
-    showBoundary(buttons.find(button => button.classList.contains('active'))?.dataset.boundaryMode || 'public');
-    followPanelLight(boundaryExplorer, '--explorer-x', '--explorer-y');
-  }
-
   const placeExplorer = document.querySelector('[data-place-explorer]');
   if (placeExplorer) {
     const buttons = [...placeExplorer.querySelectorAll('[data-place-lens]')];
@@ -133,43 +112,6 @@
     buttons.forEach(button => button.addEventListener('click', () => showPlaceLens(button.dataset.placeLens)));
     showPlaceLens(buttons.find(button => button.classList.contains('active'))?.dataset.placeLens || 'relationships');
     followPanelLight(placeExplorer, '--place-x', '--place-y');
-  }
-
-  const permissionCopy = {
-    view: ['Viewing has its own terms.', 'A person may view material for a named activity while storage, transcription, model work and publication remain separate conversations.'],
-    store: ['Storage names custody and duration.', 'The record identifies where working files, backups, logs and temporary copies live, who holds them and when review returns.'],
-    transcribe: ['Transcription creates a new record.', 'Speech, names, language, context and corrections stay connected to contributors and the purpose of the project.'],
-    train: ['Model work names inputs and outputs.', 'The project records source material, local processing, model artefacts, access, evaluation and the outputs selected for release.'],
-    publish: ['Publication selects a particular output.', 'A public film, event listing or model view carries its source, contributors, credits, version and reuse terms.'],
-    withdraw: ['Review remains part of the relationship.', 'People revisit access, purpose, corrections, retention and withdrawal as material and projects develop over time.']
-  };
-  const permissionBoard = document.querySelector('[data-permission-board]');
-  permissionBoard?.querySelectorAll('[data-layer]').forEach(tab => tab.addEventListener('click', () => {
-    permissionBoard.querySelectorAll('[data-layer]').forEach(item => {
-      const active = item === tab;
-      item.classList.toggle('active', active);
-      item.setAttribute('aria-pressed', String(active));
-    });
-    const [heading, copy] = permissionCopy[tab.dataset.layer];
-    const target = permissionBoard.querySelector('[data-layer-copy]');
-    target.innerHTML = `<h3>${heading}</h3><p>${copy}</p>`;
-  }));
-
-  const modeExplorer = document.querySelector('[data-mode-explorer]');
-  if (modeExplorer) {
-    const buttons = [...modeExplorer.querySelectorAll('[data-mode]')];
-    const panels = [...modeExplorer.querySelectorAll('[data-mode-panel]')];
-    const showMode = key => {
-      buttons.forEach(button => {
-        const active = button.dataset.mode === key;
-        button.classList.toggle('active', active);
-        button.setAttribute('aria-pressed', String(active));
-      });
-      panels.forEach(panel => { panel.hidden = panel.dataset.modePanel !== key; });
-    };
-    modeExplorer.classList.add('is-enhanced');
-    buttons.forEach(button => button.addEventListener('click', () => showMode(button.dataset.mode)));
-    showMode(buttons.find(button => button.classList.contains('active'))?.dataset.mode || 'everyday');
   }
 
   const workbenchExplorer = document.querySelector('[data-workbench-explorer]');

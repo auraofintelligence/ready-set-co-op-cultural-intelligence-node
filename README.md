@@ -13,8 +13,8 @@ S.E.T. means Sustainable Employment and Training. The cooperative is the work, l
 - one GB200 NVL72-class rack as a concrete scale for workloads, power, cooling, skills and place
 - Dunwich on Minjerribah as the lived context shaping the node
 - cultural relationship, permission, custody and human-held knowledge carried through each project record
-- public links to existing local media, events, place evidence, making, repair, energy, science, music and legal-engine work
-- an interactive ordinary-Tuesday and disruption-mode comparison
+- one dedicated catalogue linking existing local media, events, place evidence, sport, screens, making, repair, energy, science, music and legal-engine work
+- an always-visible ordinary-Tuesday and disruption comparison
 - a source-to-rack place-modelling workbench built around real local project foundations
 - a browser-local builder that exports a custom cultural compute node brief as Markdown
 - a seven-movement process and selected node-to-node exchange
@@ -28,6 +28,7 @@ The wider body of work appears through links, especially the [filtered Project A
 - [Dunwich place study](https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/dunwich.html)
 - [Cultural collaboration](https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/culture.html)
 - [Practical uses](https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/uses.html)
+- [Local project constellation](https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/projects.html)
 - [Place modelling workbench](https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/digital-twin.html)
 - [Repeatable plan](https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/process.html)
 - [Co-op layer](https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/cooperative.html)
@@ -49,7 +50,7 @@ npm run build
 npm run check
 ```
 
-The check covers page structure, internal links, external-link behaviour, unique local hero files, raster favicons, navigation, return-to-top controls, Australian-language constraints and the no-SVG rule. Interactive elements remain readable as ordinary content when JavaScript is unavailable.
+The check covers page structure, internal links, external-link behaviour, the single project catalogue, unique local hero files, raster favicons, navigation, return-to-top controls, Australian-language constraints and the no-SVG rule. Interactive elements remain readable as ordinary content when JavaScript is unavailable.
 
 ## Source boundaries
 

@@ -10,6 +10,7 @@ const routes = [
   { file: 'dunwich.html', label: 'Dunwich', short: 'Place' },
   { file: 'culture.html', label: 'Cultural collaboration', short: 'Culture' },
   { file: 'uses.html', label: 'Practical uses', short: 'Uses' },
+  { file: 'projects.html', label: 'Local projects', short: 'Projects' },
   { file: 'digital-twin.html', label: 'Digital twin', short: 'Twin' },
   { file: 'process.html', label: 'Repeatable plan', short: 'Plan' },
   { file: 'cooperative.html', label: 'Co-op layer', short: 'Co-op' },
@@ -147,8 +148,17 @@ const publicProjects = [
     rack: 'Energy modelling compares generation, storage, demand and island resilience scenarios.'
   },
   {
+    id: 'sandy-sports',
+    title: 'Community Club Builder: Sandy Sports',
+    url: 'https://auraofintelligence.github.io/community-club-builder-sandy-sports/',
+    image: 'sandy-sports.webp',
+    status: 'Published club-building playbook',
+    description: 'Uses a Minjerribah sand sports proposal to connect welcoming participation, shared administration, evidence, events and resilient handovers.',
+    rack: 'Local compute supports membership, rosters, event media, grant evidence and shared records.'
+  },
+  {
     id: 'ballow-road',
-    title: 'Ballow Road Sand & Screen Hub',
+    title: 'Ballow Road Sand and Screen Hub',
     url: 'https://auraofintelligence.github.io/ballow-road-sand-screen-hub/',
     image: 'ballow-road.webp',
     status: 'Public place proposal',
@@ -205,7 +215,7 @@ const pages = {
     heading: 'One rack. Many local directions.',
     lede: 'A working exploration of local compute on Minjerribah: useful every day, shaped through Indigenous and non-Indigenous relationships, and connected beyond the island only on locally chosen terms.',
     actions: [
-      ['Explore the rack', 'node.html'],
+      ['Enter the idea', '#starting-point'],
       ['Follow the repeatable plan', 'process.html']
     ],
     body: `
@@ -236,84 +246,23 @@ const pages = {
       </section>
 
       <section class="section section-sunrise">
-        <div class="wrap split reveal">
-          <div>
-            <h2>Follow a real record through the node.</h2>
-            <p class="lead">Every project brings its own origin, purpose, relationships, custody, processing, output and review path.</p>
-            <p>The examples reveal overlapping personal, organisational, community and cultural relationships. The rack follows those distinctions through the whole workload.</p>
-            <a class="text-link" href="culture.html">Explore cultural collaboration <span aria-hidden="true">→</span></a>
-          </div>
-          <div class="boundary-explorer" data-boundary-explorer>
-            <div class="boundary-switcher" aria-label="Explore four local record journeys">
-              <button type="button" class="active" data-boundary-mode="public" aria-controls="boundary-public" aria-pressed="true"><span>Event listing</span><small>Public record</small></button>
-              <button type="button" data-boundary-mode="purpose" aria-controls="boundary-purpose" aria-pressed="false"><span>Gumpi 360</span><small>Place evidence</small></button>
-              <button type="button" data-boundary-mode="group" aria-controls="boundary-group" aria-pressed="false"><span>Screen project</span><small>Named production</small></button>
-              <button type="button" data-boundary-mode="human" aria-controls="boundary-human" aria-pressed="false"><span>Human-held</span><small>Living knowledge</small></button>
-            </div>
-            <div class="boundary-panels" aria-live="polite">
-              <article class="boundary-panel" id="boundary-public" data-boundary-panel="public">
-                <h3>A public event enters through its organiser.</h3>
-                <p>The Events Engine keeps source, organiser, place, timing and correction paths attached as the node indexes a public listing.</p>
-                <ol class="material-route open-route">
-                  <li><small>Origin</small><strong>Organiser record</strong></li>
-                  <li><small>Purpose</small><strong>Local discovery</strong></li>
-                  <li><small>Custody</small><strong>Source stays named</strong></li>
-                  <li><small>Local processing</small><strong>Index and format</strong></li>
-                  <li><small>Output</small><strong>Public event view</strong></li>
-                  <li><small>Review</small><strong>Correct or withdraw</strong></li>
-                </ol>
-                <dl class="boundary-facts"><div><dt>Relationships</dt><dd>Organisational, public, community</dd></div><div><dt>Rack work</dt><dd>Search, format, local access</dd></div><div><dt>Public connection</dt><dd>Quandamooka Country Events Engine</dd></div></dl>
-              </article>
-              <article class="boundary-panel" id="boundary-purpose" data-boundary-panel="purpose">
-                <h3>A 360 capture keeps its evidence trail.</h3>
-                <p>GPS-rounded public imagery from the Gumpi ferry terminal lab supports a named design question with date, precision and source visible.</p>
-                <ol class="material-route purpose-route">
-                  <li><small>Origin</small><strong>360 field capture</strong></li>
-                  <li><small>Purpose</small><strong>Explore terminal choices</strong></li>
-                  <li><small>Custody</small><strong>Source archive</strong></li>
-                  <li><small>Local processing</small><strong>Align and simulate</strong></li>
-                  <li><small>Output</small><strong>Reviewable views</strong></li>
-                  <li><small>Review</small><strong>Date and precision</strong></li>
-                </ol>
-                <dl class="boundary-facts"><div><dt>Relationships</dt><dd>Public source, project, place</dd></div><div><dt>Rack work</dt><dd>Immersive media and simulation</dd></div><div><dt>Public connection</dt><dd>Dunwich Gumpi Open Data Lab</dd></div></dl>
-              </article>
-              <article class="boundary-panel" id="boundary-group" data-boundary-panel="group">
-                <h3>A screen project carries several relationships at once.</h3>
-                <p>Creator files, interviews, locations, music and production records follow the purpose and terms of one named work.</p>
-                <ol class="material-route group-route">
-                  <li><small>Origin</small><strong>Creators and contributors</strong></li>
-                  <li><small>Purpose</small><strong>Named production</strong></li>
-                  <li><small>Custody</small><strong>Project workspace</strong></li>
-                  <li><small>Local processing</small><strong>Edit and render</strong></li>
-                  <li><small>Output</small><strong>Selected release</strong></li>
-                  <li><small>Review</small><strong>Rights and credits</strong></li>
-                </ol>
-                <dl class="boundary-facts"><div><dt>Relationships</dt><dd>Individual, group, purpose, cultural</dd></div><div><dt>Rack work</dt><dd>Media, models and local storage</dd></div><div><dt>Public connection</dt><dd>Minjerribah Screen Media Network</dd></div></dl>
-              </article>
-              <article class="boundary-panel" id="boundary-human" data-boundary-panel="human">
-                <h3>The route may stay entirely between people.</h3>
-                <p>A conversation, practice or form of knowledge may shape a project direction while its substance remains held in living relationship.</p>
-                <ol class="material-route human-route">
-                  <li><small>Origin</small><strong>Living relationship</strong></li>
-                  <li><small>Purpose</small><strong>Human conversation</strong></li>
-                  <li><small>Custody</small><strong>People involved</strong></li>
-                  <li class="bypass-step"><small>Local processing</small><strong>Human interpretation</strong></li>
-                  <li><small>Output</small><strong>Direction or boundary</strong></li>
-                  <li class="bypass-step"><small>Review</small><strong>Relationship continues</strong></li>
-                </ol>
-                <dl class="boundary-facts"><div><dt>Relationships</dt><dd>Personal, family, community, cultural</dd></div><div><dt>Rack work</dt><dd>Only the chosen project boundary</dd></div><div><dt>Public connection</dt><dd>None unless people create one</dd></div></dl>
-              </article>
-            </div>
-            <a class="boundary-deep-link" href="culture.html#layers">Explore every knowledge layer <span aria-hidden="true">→</span></a>
-          </div>
+        <div class="wrap reveal">
+          <div class="section-heading dark-heading"><h2>Every project carries a traceable path.</h2><p>Origin, purpose, relationships and review stay visible from the first conversation to the final output.</p></div>
+          <ol class="record-spine">
+            <li><small>01</small><strong>Origin</strong><span>People, place and source</span></li>
+            <li><small>02</small><strong>Purpose</strong><span>The activity in view</span></li>
+            <li><small>03</small><strong>Custody</strong><span>Where material lives</span></li>
+            <li><small>04</small><strong>Local work</strong><span>Processing on the node</span></li>
+            <li><small>05</small><strong>Output</strong><span>What leaves the workspace</span></li>
+            <li><small>06</small><strong>Review</strong><span>What changes next</span></li>
+          </ol>
+          <div class="section-action-row"><p>Different material follows different paths. Some knowledge remains entirely within living relationships.</p><a class="button button-dark magnetic" href="#local-work"><span>Meet the projects behind the path</span></a></div>
         </div>
       </section>
 
       <section class="section section-light" id="local-work">
         <div class="wrap reveal">
-          <div class="section-heading dark-heading"><h2>Local work already gives the rack a purpose.</h2><p>These are public projects, tools and prototypes built before the rack. Their real workloads reveal what shared local compute is for.</p></div>
-          ${projectGallery(['media-network', 'music-universe', 'infinity-engine', 'legal-engine', 'gumpi-terminal', 'events-engine', 'twin-builders', 'grain-by-grain', 'wildlife-rescue'], true)}
-          <div class="section-action-row"><a class="button button-dark magnetic" href="uses.html"><span>Explore every local direction</span></a><a class="text-link" href="process.html">Shape a repeatable node plan <span aria-hidden="true">→</span></a></div>
+          <a class="project-doorway" href="projects.html"><span><small>One clear catalogue</small><strong>Local work already gives the rack a purpose.</strong><p>Media, events, ferry evidence, sport, screens, music, law, making, repair, energy and frontier systems are already in motion around Dunwich.</p><b>Open every project and rack connection <i aria-hidden="true">→</i></b></span></a>
         </div>
       </section>
 
@@ -327,17 +276,11 @@ const pages = {
             ${portal('node.html', 'One rack', 'What sits inside the reference rack, and what still sits outside it.')}
             ${portal('dunwich.html', 'Dunwich context', 'Ferry rhythms, island systems, Country, creative practice and local relationships.')}
             ${portal('culture.html', 'Cultural collaboration', 'Relationships and permissions carried through each real project record.')}
-            ${portal('uses.html', 'Practical uses', 'Existing local projects and frontier directions around the rack.')}
+            ${portal('uses.html', 'Practical uses', 'How everyday capability changes during disruption.')}
             ${portal('digital-twin.html', 'Place modelling', 'Traceable workloads from public evidence to reviewable local outputs.')}
             ${portal('cooperative.html', 'Co-op layer', 'Shared employment, training, equipment and services around the node.')}
+            ${portal('network.html', 'Wider network', 'What travels between distinct local intelligences and what stays local.')}
           </div>
-        </div>
-      </section>
-
-      <section class="section section-spectrum">
-        <div class="wrap reveal">
-          ${adventureProject()}
-          <div class="section-action-row light-actions"><p>The filtered Project Atlas shows the 2026 macro network behind this focused Dunwich node.</p><a class="button button-glass magnetic" href="https://auraofintelligence.github.io/project-atlas/?query=set&amp;year=&amp;family=&amp;page=&amp;connections=&amp;sort=newest" target="_blank" rel="noopener noreferrer"><span>Open the filtered Project Atlas</span></a></div>
         </div>
       </section>`
   },
@@ -360,8 +303,6 @@ const pages = {
           <div><strong>Replaceable technical reference</strong><span>Workloads and local value lead future equipment choices across vendors and generations.</span></div>
         </aside>
       </div></section>
-
-      <section class="section section-light"><div class="wrap reveal"><div class="section-heading dark-heading"><h2>What the rack is here to accelerate.</h2><p>Four very different projects show the value of a shared high-performance workbench.</p></div>${projectGallery(['media-network', 'extreme-matter', 'sandworm', 'clean-energy'], true)}</div></section>
 
       <section class="section section-ink"><div class="wrap reveal">
         <h2>The node around the rack</h2>
@@ -400,7 +341,7 @@ const pages = {
     theme: 'coral',
     heading: 'Island life gives the node its shape.',
     lede: 'Dunwich brings relationships, ferry rhythms, cultural life, creative work, Country, coast and everyday services into the design of a local cultural compute node.',
-    actions: [['Explore the place lenses', '#place-lenses'], ['Follow the repeatable plan', 'process.html']],
+    actions: [['Explore the place lenses', '#place-lenses']],
     body: `
       <section class="section section-coral place-opening"><div class="wrap place-bento reveal">
         <article class="place-bento-main"><h2>Dunwich changes the rack.</h2><p class="lead">Ferry access, island power, connectivity, cooling, heat, weather, creative practice and local service rhythms turn generic equipment into a place-specific workbench.</p><p>The node draws value from work already happening and projects already built. Cultural intelligence grows through relationship and interpretation around that work.</p></article>
@@ -445,8 +386,7 @@ const pages = {
       </div></section>
 
       <section class="section section-light" id="dunwich-projects"><div class="wrap reveal">
-        <div class="section-heading dark-heading"><h2>Built around the island already.</h2><p>These public projects turn local context into media, evidence, events, repair, circular materials and place-based learning.</p></div>
-        ${projectGallery(['gumpi-terminal', 'media-network', 'events-engine', 'grain-by-grain', 'makerspace', 'tip-loop'], true)}
+        <div class="split"><div><h2>Sport, screens and community building already have public pathways.</h2><p class="lead">Sandy Sports explores the people and operating model for a community club. Ballow Road explores one place-specific sand sport, outdoor screen and market hub. They remain separate projects with a clear relationship.</p></div><a class="button button-dark magnetic" href="projects.html#place-community"><span>Explore the Dunwich project set</span></a></div>
       </div></section>
 
       <section class="section section-light"><div class="wrap reveal">
@@ -475,18 +415,17 @@ const pages = {
     theme: 'gold',
     heading: 'Relationship gives the technology meaning.',
     lede: 'Indigenous and non-Indigenous collaboration takes form through specific people, projects and places. The node keeps each purpose, relationship, permission and output visible through the work.',
-    actions: [['Explore a project record', '#layers'], ['Open the local examples', '#cultural-projects']],
+    actions: [['See the operation field', '#layers'], ['Open public guidance', '#guidance']],
     body: `
       <section class="section section-light"><div class="wrap intro-grid reveal"><div><h2>Different relationships remain visible together.</h2><p class="lead">One interview, event, film or place record may carry individual, family, organisational, community and cultural relationships at the same time.</p></div><div class="concept-panel"><p><strong>Living relationship</strong><br>People connected to the activity bring context, standing, memory and interpretation.</p><p><strong>Named purpose</strong><br>Viewing, storage, transcription, model work, publication and retention remain separate choices.</p><p><strong>Visible record</strong><br>Custody, access period, attribution, review and withdrawal travel with the material.</p></div></div></section>
 
-      <section class="section section-ink" id="layers"><div class="wrap reveal"><div class="section-heading"><h2>One record. Different operations.</h2><p>Select an operation to see how permission changes while the underlying relationships stay attached.</p></div><div class="permission-board" data-permission-board>
-        <button type="button" class="permission-tab active" data-layer="view" aria-pressed="true">View</button>
-        <button type="button" class="permission-tab" data-layer="store" aria-pressed="false">Store</button>
-        <button type="button" class="permission-tab" data-layer="transcribe" aria-pressed="false">Transcribe</button>
-        <button type="button" class="permission-tab" data-layer="train" aria-pressed="false">Model work</button>
-        <button type="button" class="permission-tab" data-layer="publish" aria-pressed="false">Publish</button>
-        <button type="button" class="permission-tab" data-layer="withdraw" aria-pressed="false">Review and withdraw</button>
-        <div class="permission-copy" data-layer-copy><h3>Viewing has its own terms.</h3><p>A person may view material for a named activity while storage, transcription, model work and publication remain separate conversations.</p></div>
+      <section class="section section-ink" id="layers"><div class="wrap reveal"><div class="section-heading"><h2>One record. Six separate operations.</h2><p>Every operation stays visible at once. A choice around viewing does not silently become storage, transcription, model work or publication.</p></div><div class="operation-field">
+        <article><small>01</small><h3>View</h3><strong>Viewing has its own terms.</strong><p>A person may view material for a named activity while every other operation remains a separate conversation.</p></article>
+        <article><small>02</small><h3>Store</h3><strong>Storage names custody and duration.</strong><p>The record identifies working files, backups, logs, temporary copies, who holds them and when review returns.</p></article>
+        <article><small>03</small><h3>Transcribe</h3><strong>Transcription creates a new record.</strong><p>Speech, names, language, context and corrections stay connected to contributors and the purpose of the project.</p></article>
+        <article><small>04</small><h3>Model work</h3><strong>Inputs and outputs stay named.</strong><p>The project records source material, local processing, model artefacts, access, evaluation and selected outputs.</p></article>
+        <article><small>05</small><h3>Publish</h3><strong>Publication selects a particular output.</strong><p>A public film, event listing or model view carries its source, contributors, credits, version and reuse terms.</p></article>
+        <article><small>06</small><h3>Review</h3><strong>The relationship continues.</strong><p>People revisit access, purpose, corrections, retention and withdrawal as material and projects develop over time.</p></article>
       </div></div></section>
 
       <section class="section section-gold"><div class="wrap reveal"><h2>Questions that stay attached to material</h2><div class="question-grid">
@@ -498,9 +437,7 @@ const pages = {
         ${question('What remains human-held?', 'A project may record a direction or boundary while the knowledge itself stays in living relationship.')}
       </div></div></section>
 
-      <section class="section section-ink" id="cultural-projects"><div class="wrap reveal"><div class="section-heading"><h2>Local projects give collaboration a real shape.</h2><p>Media, events and documentary work each bring different people, material, purposes and public outputs around the node.</p></div>${projectGallery(['media-network', 'events-engine', 'grain-by-grain'], true)}</div></section>
-
-      <section class="section section-light"><div class="wrap split reveal"><div><h2>Guidance worth bringing into each project.</h2><p>These public frameworks add practical questions about collective benefit, control, responsibility, ethics and research relationships. Each project still develops through its own people and context.</p></div><div class="link-stack"><a href="https://www.maiamnayriwingara.org/" target="_blank" rel="noopener noreferrer"><strong>Maiam nayri Wingara</strong><span>Indigenous Data Sovereignty Collective</span></a><a href="https://www.gida-global.org/care" target="_blank" rel="noopener noreferrer"><strong>CARE Principles</strong><span>Collective Benefit, Authority to Control, Responsibility and Ethics</span></a><a href="https://aiatsis.gov.au/research/ethical-research/code-ethics" target="_blank" rel="noopener noreferrer"><strong>AIATSIS Code of Ethics</strong><span>Official ethical research guidance</span></a></div></div></section>`
+      <section class="section section-light" id="guidance"><div class="wrap split reveal"><div><h2>Guidance worth bringing into each project.</h2><p>These public frameworks add practical questions about collective benefit, control, responsibility, ethics and research relationships. Each project still develops through its own people and context.</p></div><div class="link-stack"><a href="https://www.maiamnayriwingara.org/" target="_blank" rel="noopener noreferrer"><strong>Maiam nayri Wingara</strong><span>Indigenous Data Sovereignty Collective</span></a><a href="https://www.gida-global.org/care" target="_blank" rel="noopener noreferrer"><strong>CARE Principles</strong><span>Collective Benefit, Authority to Control, Responsibility and Ethics</span></a><a href="https://aiatsis.gov.au/research/ethical-research/code-ethics" target="_blank" rel="noopener noreferrer"><strong>AIATSIS Code of Ethics</strong><span>Official ethical research guidance</span></a></div></div></section>`
   },
 
   'uses.html': {
@@ -511,47 +448,60 @@ const pages = {
     theme: 'lime',
     heading: 'Useful on an ordinary Tuesday.',
     lede: 'A local node makes more sense when people reach for it during everyday work. Emergency usefulness grows from equipment, skills and relationships already in use.',
-    actions: [['Explore the local projects', '#workloads'], ['Open the place workbench', 'digital-twin.html']],
+    actions: [['Compare the two conditions', '#workloads']],
     body: `
-      <section class="section section-light"><div class="wrap reveal">
-        <div class="section-heading dark-heading"><h2>The same capability changes with the day.</h2><p>Choose a mode to see how four existing local directions change their workload, people and output.</p></div>
-        <div class="mode-explorer" data-mode-explorer>
-          <div class="mode-switch" aria-label="Choose an operating mode"><button class="active" type="button" data-mode="everyday" aria-controls="mode-everyday" aria-pressed="true">Ordinary Tuesday</button><button type="button" data-mode="disruption" aria-controls="mode-disruption" aria-pressed="false">During disruption</button></div>
-          <div class="mode-panels" aria-live="polite">
-            <div class="mode-panel" id="mode-everyday" data-mode-panel="everyday">
+      <section class="section section-light" id="workloads"><div class="wrap reveal">
+        <div class="section-heading dark-heading"><h2>The same capability changes with the day.</h2><p>Both conditions stay visible together, revealing how familiar equipment, people and records shift purpose during disruption.</p></div>
+        <div class="operating-comparison">
+          <section><header><small>Everyday rhythm</small><h3>Ordinary Tuesday</h3></header><div class="mode-panel">
               <article><small>Screen and media</small><strong>Edit, transcribe, colour and render local productions.</strong><span>Creators, trainees and media crews use the rack as a shared studio engine.</span></article>
               <article><small>Events</small><strong>Build listings, run plans, place maps and public notices.</strong><span>Organisers and suppliers keep reusable records close to the island.</span></article>
               <article><small>Place evidence</small><strong>Process 360 captures, field records and simulation inputs.</strong><span>Project teams compare source-labelled views and record corrections.</span></article>
               <article><small>Making and energy</small><strong>Develop fabrication files, material loops and energy models.</strong><span>Makers, repairers and systems thinkers move between digital and physical work.</span></article>
-            </div>
-            <div class="mode-panel" id="mode-disruption" data-mode-panel="disruption">
+            </div></section>
+          <section><header><small>Changed conditions</small><h3>During disruption</h3></header><div class="mode-panel">
               <article><small>Trusted local media</small><strong>Prepare selected updates and retain local production access.</strong><span>Known local relationships support clear information and durable records.</span></article>
               <article><small>Event infrastructure</small><strong>Reuse place, supplier and run records for local coordination.</strong><span>Existing tools shift towards changed access, notices and aftercare.</span></article>
               <article><small>Place evidence</small><strong>Compare previous captures with current field observations.</strong><span>Source dates, location precision and uncertainty stay visible through review.</span></article>
               <article><small>Making and energy</small><strong>Prioritise repair, service continuity and available power.</strong><span>Local skills, equipment and tested workflows shape the response.</span></article>
-            </div>
-          </div>
+            </div></section>
         </div>
-      </div></section>
-
-      <section class="section section-ink" id="workloads"><div class="wrap reveal">
-        <div class="section-heading"><h2>Work already alive around the rack.</h2><p>These public projects carry real local context, interfaces, sources and next-stage workloads.</p></div>
-        ${projectGallery(['media-network', 'gumpi-terminal', 'events-engine', 'twin-builders', 'grain-by-grain', 'wildlife-rescue', 'trust-hub', 'community-wealth'])}
-      </div></section>
-
-      <section class="section section-spectrum"><div class="wrap reveal">
-        <div class="section-heading"><h2>Culture becomes music, motion and usable public knowledge.</h2><p>These live engines show how one rack supports cultural production, visual pipelines and citation-first public-law research.</p></div>
-        ${projectGallery(['music-universe', 'infinity-engine', 'legal-engine'])}
-      </div></section>
-
-      <section class="section section-lime"><div class="wrap reveal">
-        <div class="section-heading dark-heading"><h2>Frontier directions worth arguing about.</h2><p>Makerspace, circular materials, extreme matter, subterranean systems, clean energy and a public hub turn the rack into an instrument for ambitious local experimentation.</p></div>
-        ${projectGallery(['makerspace', 'tip-loop', 'extreme-matter', 'sandworm', 'clean-energy', 'ballow-road'])}
       </div></section>
 
       <section class="section section-light"><div class="wrap reveal">
         <div class="evidence-route"><article><small>01</small><strong>Choose a live question</strong><span>Start with a project people already care about.</span></article><i aria-hidden="true">→</i><article><small>02</small><strong>Run it on the node</strong><span>Record energy, time, quality, skills and local value.</span></article><i aria-hidden="true">→</i><article><small>03</small><strong>Publish what was learned</strong><span>Give the next project a stronger starting point.</span></article></div>
-        <div class="section-action-row"><a class="button button-dark magnetic" href="process.html"><span>Shape the repeatable plan</span></a><a class="text-link" href="network.html">See the wider network <span aria-hidden="true">→</span></a></div>
+        <div class="section-action-row"><a class="button button-dark magnetic" href="projects.html"><span>Browse every local project</span></a><a class="text-link" href="process.html">Shape the repeatable plan <span aria-hidden="true">→</span></a></div>
+      </div></section>`
+  },
+
+  'projects.html': {
+    title: 'Local projects around the Dunwich node',
+    description: 'The complete focused catalogue of public local projects, tools and frontier proposals connected to the Dunwich cultural compute node.',
+    image: 'projects.webp',
+    alt: 'Concept image of an intergenerational coastal workshop gathered around a detailed island project table containing sport, screens, a ferry, making, science, energy and subterranean systems',
+    theme: 'violet',
+    heading: 'Local projects give the rack its reason.',
+    lede: 'One clear catalogue brings the existing work together. Every project keeps its own identity, public page and status while revealing a distinct workload for the Dunwich node.',
+    actions: [['Explore culture and knowledge', '#culture-knowledge'], ['Jump to place and community', '#place-community']],
+    body: `
+      <section class="section section-ink" id="culture-knowledge"><div class="wrap reveal">
+        <div class="section-heading"><h2>Culture, media and public knowledge</h2><p>Story, music, events, documentary, production systems and citation-first law turn compute into visible cultural practice.</p></div>
+        ${projectGallery(['media-network', 'events-engine', 'grain-by-grain', 'music-universe', 'infinity-engine', 'legal-engine'])}
+      </div></section>
+
+      <section class="section section-orange" id="place-community"><div class="wrap reveal">
+        <div class="section-heading dark-heading"><h2>Place, community and shared capability</h2><p>Ferry evidence, club formation, sand sport, outdoor screens, wildlife, cooperative pathways and community wealth connect the rack to island life.</p></div>
+        ${projectGallery(['gumpi-terminal', 'sandy-sports', 'ballow-road', 'twin-builders', 'wildlife-rescue', 'trust-hub', 'community-wealth'])}
+      </div></section>
+
+      <section class="section section-lime" id="frontier-systems"><div class="wrap reveal">
+        <div class="section-heading dark-heading"><h2>Making and frontier systems</h2><p>Repair, circular materials, extreme matter, subterranean systems and clean energy give the node ambitious physical questions to explore.</p></div>
+        ${projectGallery(['makerspace', 'tip-loop', 'extreme-matter', 'sandworm', 'clean-energy'])}
+      </div></section>
+
+      <section class="section section-spectrum" id="wider-network"><div class="wrap reveal">
+        ${adventureProject()}
+        <div class="section-action-row light-actions"><p>Project Atlas opens the larger 2026 body of work beyond this focused Dunwich catalogue.</p><div class="inline-link-row"><a href="https://auraofintelligence.github.io/project-atlas/?query=set&amp;year=&amp;family=&amp;page=&amp;connections=&amp;sort=newest" target="_blank" rel="noopener noreferrer">Project Atlas ↗</a><a href="https://auraofintelligence.github.io/Future-of-Life-2045/" target="_blank" rel="noopener noreferrer">Future of Life 2045 ↗</a><a href="https://auraofintelligence.github.io/Oceania-healthy-de-slop-co-ops/" target="_blank" rel="noopener noreferrer">Oceania Healthy De-Slop Co-ops ↗</a></div></div>
       </div></section>`
   },
 
@@ -563,11 +513,11 @@ const pages = {
     theme: 'blue',
     heading: 'Local models need a serious workbench.',
     lede: 'Dunwich already has public place records, 360 captures, event maps, prompt builders and ambitious simulation work. The rack brings those separate sources into traceable workloads built around one question at a time.',
-    actions: [['Open the workload explorer', '#model-workbench'], ['See the local foundations', '#model-foundations']],
+    actions: [['Open the workload explorer', '#model-workbench'], ['Browse place projects', 'projects.html#place-community']],
     body: `
       <section class="section section-light" id="model-foundations"><div class="wrap reveal">
-        <div class="section-heading dark-heading"><h2>Real foundations already exist.</h2><p>Each public project contributes a different part of the workload: evidence, structured place records, or portable world-building instructions.</p></div>
-        ${projectGallery(['gumpi-terminal', 'events-engine', 'twin-builders'], true)}
+        <div class="section-heading dark-heading"><h2>Three kinds of source already exist.</h2><p>The workbench below combines traceable evidence, structured coordination records and portable scene instructions without pretending they are the same thing.</p></div>
+        <div class="foundation-strip"><article><small>Evidence</small><strong>Gumpi 360 captures</strong><p>Dated, GPS-rounded imagery and official project records.</p></article><article><small>Coordination</small><strong>Events Engine records</strong><p>Organisers, places, suppliers, timings and public pathways.</p></article><article><small>World building</small><strong>Portable scene briefs</strong><p>Explicit choices for rooms, places, bioregions and simulations.</p></article></div>
       </div></section>
 
       <section class="section section-ink" id="model-workbench"><div class="wrap reveal">
@@ -675,8 +625,6 @@ const pages = {
 
       <section class="section section-orange"><div class="wrap reveal"><h2>Value beyond machine time</h2><div class="three-grid"><article class="solid-card"><h3>Local capability</h3><p>More people understand how the system works, where its limits sit and how to recover it.</p></article><article class="solid-card"><h3>Shared access</h3><p>Equipment that is unrealistic for one person becomes a managed resource for suitable projects.</p></article><article class="solid-card"><h3>Longer relationships</h3><p>Repeated work supports trust, correction and continuity beyond one short technical pilot.</p></article></div></div></section>
 
-      <section class="section section-ink"><div class="wrap reveal"><div class="section-heading"><h2>Existing projects already reveal the work.</h2><p>Shared media production, a maker workshop and community-wealth research each need different roles around the same local infrastructure.</p></div>${projectGallery(['trust-hub', 'media-network', 'makerspace', 'community-wealth'], true)}</div></section>
-
       <section class="section section-light"><div class="wrap reveal"><h2>Questions for a real cooperative conversation</h2><div class="boundary-list"><p><strong>Membership:</strong> Who wants to participate, and under what terms?</p><p><strong>Benefit:</strong> What value stays with workers, creators, custodians and the local community?</p><p><strong>Responsibility:</strong> Who holds equipment risk, employment duties, privacy and service obligations?</p><p><strong>Boundaries:</strong> Which decisions sit with the co-op, and which clearly do not?</p><p><strong>Exit:</strong> What happens to equipment, data, access and unfinished work if the structure changes?</p></div></div></section>`
   },
 
@@ -688,43 +636,36 @@ const pages = {
     theme: 'cyan',
     heading: 'A constellation of local intelligences.',
     lede: 'The Dunwich rack begins inside a local network that already exists. Media, events, place evidence, making, energy and community wealth each bring a different intelligence and a different connection.',
-    actions: [['Explore the local constellation', '#connections'], ['Open Project Atlas', 'https://auraofintelligence.github.io/project-atlas/?query=set&amp;year=&amp;family=&amp;page=&amp;connections=&amp;sort=newest', true]],
+    actions: [['Follow what travels', '#connections']],
     body: `
       <section class="section section-light"><div class="wrap intro-grid reveal"><div><h2>Family without sameness</h2><p class="lead">One place may centre language work, another climate observation, another film, health, learning, infrastructure or an idea still waiting for its first name.</p></div><div class="concept-panel"><p><strong>Local identity</strong><br>Each node carries its own name, purposes, relationships and way of working.</p><p><strong>Named cargo</strong><br>Every connection states whether it carries a public method, selected output, tool, benchmark or learning exchange.</p><p><strong>Living connection</strong><br>People revisit the purpose, terms and value of each bridge as projects change.</p></div></div></section>
 
-      <section class="section section-ink" id="connections"><div class="wrap reveal">
-        <div class="section-heading"><h2>The first constellation is already local.</h2><p>Clicking a project opens the real public work in a separate tab.</p></div>
-        ${projectGallery(['media-network', 'music-universe', 'infinity-engine', 'legal-engine', 'events-engine', 'gumpi-terminal', 'makerspace', 'tip-loop', 'clean-energy', 'community-wealth'], true)}
-      </div></section>
-
-      <section class="section section-cyan"><div class="wrap reveal"><h2>Every bridge names its cargo.</h2><div class="cargo-grid">
+      <section class="section section-cyan" id="connections"><div class="wrap reveal"><h2>Every bridge names its cargo.</h2><div class="cargo-grid">
         <article><small>Events Engine → Dunwich node</small><strong>Structured public records</strong><p>Event, place and supplier records support local search, simulation, notices and continuity workflows.</p><span>Source and organiser stay attached.</span></article>
         <article><small>Media Network → Dunwich node</small><strong>Named production workloads</strong><p>Editing, transcription, rendering and archive search sit inside the terms of each screen project.</p><span>Creators and contributors stay visible.</span></article>
         <article><small>Dunwich node → other places</small><strong>Reusable public methods</strong><p>Workload patterns, energy findings, open tools and selected outputs give another place a stronger starting point.</p><span>Local names and protocols stay local.</span></article>
       </div></div></section>
 
-      <section class="section section-spectrum"><div class="wrap reveal">
-        ${adventureProject()}
-        <div class="section-action-row light-actions"><p>Project Atlas reveals the larger 2026 body of work. This node follows the cultural compute thread through it.</p><a class="button button-glass magnetic" href="https://auraofintelligence.github.io/project-atlas/?query=set&amp;year=&amp;family=&amp;page=&amp;connections=&amp;sort=newest" target="_blank" rel="noopener noreferrer"><span>Open the filtered Project Atlas</span></a></div>
-      </div></section>`
+      <section class="section section-light"><div class="wrap split reveal"><div><h2>The project catalogue holds the local constellation.</h2><p>Each public project keeps its own page, status and identity. This network page stays with what moves between them.</p></div><a class="button button-dark magnetic" href="projects.html"><span>Browse the local projects</span></a></div></section>`
   },
 
   'sitemap.html': {
     title: 'Complete sitemap',
     description: 'Every page and principal public source in the Ready S.E.T. Co-op Cultural Intelligence Node website.',
     image: 'sitemap.webp',
-    alt: 'Concept image of ten luminous portals distributed across a colourful night-time island archipelago',
+    alt: 'Concept image of luminous portals distributed across a colourful night-time island archipelago',
     theme: 'purple',
     heading: 'Every path through the node.',
-    lede: 'The complete page map, followed by the main public sources and related projects. Internal pages stay in this window; outside sources open separately.',
-    actions: [['Browse every page', '#all-pages'], ['Return home', 'index.html']],
+    lede: 'The complete page map, followed by the main public sources, support documents and licence. Internal pages stay in this window; outside sources open separately.',
+    actions: [['Browse every page', '#all-pages']],
     body: `
       <section class="section section-light" id="all-pages"><div class="wrap reveal"><h2>Website pages</h2><div class="sitemap-grid">
-        ${siteEntry('index.html', 'Home', 'The concept, its boundaries and the seven-movement overview.')}
+        ${siteEntry('index.html', 'Home', 'The local rack idea, its relationships, traceable project path and one doorway into the existing work.')}
         ${siteEntry('node.html', 'One rack', 'The physical reference and the people, permissions and applications around it.')}
         ${siteEntry('dunwich.html', 'Dunwich place study', 'Island systems, relationships and public projects already built around the place.')}
-        ${siteEntry('culture.html', 'Cultural collaboration', 'Overlapping relationships, operation-by-operation permissions and local project examples.')}
-        ${siteEntry('uses.html', 'Practical uses', 'Working local foundations and frontier directions around the rack.')}
+        ${siteEntry('culture.html', 'Cultural collaboration', 'Overlapping relationships and six distinct operations around cultural material.')}
+        ${siteEntry('uses.html', 'Practical uses', 'Everyday capability and the way familiar work changes during disruption.')}
+        ${siteEntry('projects.html', 'Local projects', 'Every public project suggestion and its distinct rack connection in one catalogue.')}
         ${siteEntry('digital-twin.html', 'Place modelling', 'Traceable source-to-rack workloads built from real local project foundations.')}
         ${siteEntry('process.html', 'Repeatable plan', 'The customisable seven-part process and its four portable records.')}
         ${siteEntry('cooperative.html', 'Co-op layer', 'Employment, training, equipment and service roles around the node.')}
@@ -733,10 +674,6 @@ const pages = {
       </div></div></section>
 
       <section class="section section-ink"><div class="wrap reveal"><h2>Main public sources</h2><div class="link-stack wide"><a href="https://www.nvidia.com/en-us/data-center/gb200-nvl72/" target="_blank" rel="noopener noreferrer"><strong>NVIDIA GB200 NVL72</strong><span>Current manufacturer hardware reference</span></a><a href="https://www.maiamnayriwingara.org/" target="_blank" rel="noopener noreferrer"><strong>Maiam nayri Wingara</strong><span>Indigenous Data Sovereignty Collective</span></a><a href="https://www.gida-global.org/care" target="_blank" rel="noopener noreferrer"><strong>CARE Principles</strong><span>Indigenous data-governance principles</span></a><a href="https://aiatsis.gov.au/research/ethical-research/code-ethics" target="_blank" rel="noopener noreferrer"><strong>AIATSIS Code of Ethics</strong><span>Ethical research guidance</span></a><a href="https://www.parliament.qld.gov.au/Work-of-Committees/Inquiries/Inquiry-Details?id=8588" target="_blank" rel="noopener noreferrer"><strong>Queensland Parliament Bill inquiry</strong><span>Official 2026 process record</span></a><a href="https://www.legislation.qld.gov.au/view/whole/html/bill.first/bill-2026-006" target="_blank" rel="noopener noreferrer"><strong>Queensland legislation text</strong><span>Official State strategic project provisions</span></a></div></div></section>
-
-      <section class="section section-purple"><div class="wrap reveal"><div class="section-heading"><h2>Local public project network</h2><p>The complete focused set linked from this website. Every project opens in a separate tab.</p></div>${projectGallery(['media-network', 'gumpi-terminal', 'events-engine', 'twin-builders', 'grain-by-grain', 'wildlife-rescue', 'trust-hub', 'community-wealth', 'music-universe', 'infinity-engine', 'legal-engine', 'makerspace', 'tip-loop', 'extreme-matter', 'sandworm', 'clean-energy', 'ballow-road'], true)}</div></section>
-
-      <section class="section section-spectrum"><div class="wrap reveal">${adventureProject()}<div class="section-action-row light-actions"><p>Project Atlas, Future of Life 2045 and related public work provide the wider horizon.</p><div class="inline-link-row"><a href="https://auraofintelligence.github.io/project-atlas/?query=set&amp;year=&amp;family=&amp;page=&amp;connections=&amp;sort=newest" target="_blank" rel="noopener noreferrer">Project Atlas ↗</a><a href="https://auraofintelligence.github.io/Future-of-Life-2045/" target="_blank" rel="noopener noreferrer">Future of Life 2045 ↗</a><a href="https://auraofintelligence.github.io/Oceania-healthy-de-slop-co-ops/" target="_blank" rel="noopener noreferrer">Oceania Healthy De-Slop Co-ops ↗</a></div></div></div></section>
 
       <section class="section section-ink"><div class="wrap reveal"><h2>Submissions and support documents</h2><p class="lead">Public Markdown editions of the supplied source documents. They show the wider thinking while this website stays with the single-node process.</p><div class="link-stack wide"><a href="supporting-documents/senate-ai-and-data-centres-submission-2026.md"><strong>Senate AI and Data Centres Submission</strong><span>Australian infrastructure submission, 2026</span></a><a href="supporting-documents/aukus-public-inquiry-submission-2026.md"><strong>AUKUS Public Inquiry Submission</strong><span>Australian public-inquiry submission, 2026</span></a><a href="supporting-documents/a-fair-go-for-the-ai-age.md"><strong>A Fair Go for the AI Age</strong><span>Postcode-level sovereign compute as shared national infrastructure</span></a><a href="supporting-documents/do-not-put-all-our-eggs-in-one-basket.md"><strong>Do Not Put All Our Eggs in One Basket</strong><span>Distributed national compute and resilience</span></a><a href="supporting-documents/local-government-funding-inquiry-submission.md"><strong>Local Government Funding Inquiry Submission</strong><span>Local-government funding and infrastructure context</span></a><a href="supporting-documents/fiji-australia-vuvale-union-submission-2026.md"><strong>Fiji-Australia Vuvale Union Submission</strong><span>Oceania relationship and infrastructure context</span></a><a href="supporting-documents/ocean-of-peace-alliance-veitacini-treaty-submission-2026.md"><strong>Ocean of Peace Alliance and Veitacini Treaty Submission</strong><span>Oceania cooperation context</span></a><a href="supporting-documents/setco-2026-pitch-plan-revision.md"><strong>Ready S.E.T. Co-op 2026 Pitch Plan</strong><span>Earlier planning source, not a current declaration</span></a><a href="supporting-documents/README.md"><strong>Document index and boundaries</strong><span>Source notes for the complete set</span></a></div></div></section>
 

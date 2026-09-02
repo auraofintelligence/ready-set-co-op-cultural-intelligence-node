@@ -3,7 +3,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 
 const root = process.cwd();
-const pages = ['index.html', 'node.html', 'dunwich.html', 'culture.html', 'uses.html', 'digital-twin.html', 'process.html', 'cooperative.html', 'network.html', 'sitemap.html'];
+const pages = ['index.html', 'node.html', 'dunwich.html', 'culture.html', 'uses.html', 'projects.html', 'digital-twin.html', 'process.html', 'cooperative.html', 'network.html', 'sitemap.html'];
 const heroPages = [...pages, '404.html'];
 const errors = [];
 const textExtensions = new Set(['.html', '.md', '.js', '.mjs', '.css', '.json', '.xml', '.txt', '.webmanifest']);
@@ -100,15 +100,29 @@ for (const image of fs.readdirSync(path.join(root, 'assets', 'projects'))) {
   if (!/\.(?:webp|png|jpe?g)$/i.test(image)) errors.push(`assets/projects/${image}: project image is not raster`);
 }
 for (const feature of [
-  ['index.html', 'data-boundary-explorer'],
+  ['index.html', 'class="record-spine"'],
   ['dunwich.html', 'data-place-explorer'],
-  ['culture.html', 'data-permission-board'],
-  ['uses.html', 'data-mode-explorer'],
+  ['culture.html', 'class="operation-field"'],
+  ['uses.html', 'class="operating-comparison"'],
   ['digital-twin.html', 'data-workbench'],
-  ['process.html', 'data-node-plan-builder']
+  ['process.html', 'data-node-plan-builder'],
+  ['cooperative.html', 'data-role-wheel']
 ]) {
   const [page, marker] = feature;
   if (!fs.readFileSync(path.join(root, page), 'utf8').includes(marker)) errors.push(`${page}: missing ${marker}`);
+}
+const projectsHtml = fs.readFileSync(path.join(root, 'projects.html'), 'utf8');
+const projectCardCount = [...projectsHtml.matchAll(/class="local-project-card/g)].length;
+if (projectCardCount !== 18) errors.push(`projects.html: expected 18 project cards, found ${projectCardCount}`);
+if (!projectsHtml.includes('community-club-builder-sandy-sports')) errors.push('projects.html: missing Sandy Sports');
+if (!projectsHtml.includes('ballow-road-sand-screen-hub')) errors.push('projects.html: missing Ballow Road Sand and Screen Hub');
+for (const image of fs.readdirSync(path.join(root, 'assets', 'projects'))) {
+  if (!projectsHtml.includes(`assets/projects/${image}`)) errors.push(`projects.html: missing project image ${image}`);
+}
+for (const page of pages.filter(page => page !== 'projects.html')) {
+  const html = fs.readFileSync(path.join(root, page), 'utf8');
+  if (/class="local-project-card/.test(html)) errors.push(`${page}: repeats the dedicated project catalogue`);
+  if (/class="adventure-project/.test(html)) errors.push(`${page}: repeats the wider project gateway`);
 }
 for (const page of pages) {
   const route = page === 'index.html' ? 'ready-set-co-op-cultural-intelligence-node/' : `ready-set-co-op-cultural-intelligence-node/${page}`;
@@ -131,4 +145,4 @@ if (errors.length) {
 }
 
 console.log(`Checked ${pages.length} main pages, 404.html, ${allFiles.length} repository files and ${heroHashes.size} unique local raster heroes.`);
-console.log('Confirmed: complete navigation, secure external links, unique raster heroes, raster project imagery, meaningful interaction markers, single-pass motion, no decorative canvas effects, no remote images, no vector references, no decorative eyebrows, no directive or permission language, no timid framing, and no en dashes or em dashes.');
+console.log('Confirmed: complete navigation, one dedicated project catalogue, secure external links, unique raster heroes, raster project imagery, distinct interaction patterns, single-pass motion, no decorative canvas effects, no remote images, no vector references, no decorative eyebrows, no directive or permission language, no timid framing, and no en dashes or em dashes.');
