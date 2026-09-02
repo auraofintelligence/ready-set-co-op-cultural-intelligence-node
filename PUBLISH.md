@@ -1,12 +1,12 @@
 # Publish at the new address
 
-Repository: `auraofintelligence/ready-set-cultural-intelligence-node`
+Repository: `auraofintelligence/ready-set-co-op-cultural-intelligence-node`
 
-Public site: `https://auraofintelligence.github.io/ready-set-cultural-intelligence-node/`
+Public site: `https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/`
 
 ## GitHub website route
 
-1. Create a new public repository named `ready-set-cultural-intelligence-node` without adding starter files.
+1. Create a new public repository named `ready-set-co-op-cultural-intelligence-node` without adding starter files.
 2. Upload the contents of this folder to the repository root, or push the included Git history.
 3. Open **Settings → Pages**.
 4. Select **Deploy from a branch**, branch **main**, folder **/(root)**.
@@ -15,7 +15,7 @@ Public site: `https://auraofintelligence.github.io/ready-set-cultural-intelligen
 ## Command-line route
 
 ```bash
-git remote add origin https://github.com/auraofintelligence/ready-set-cultural-intelligence-node.git
+git remote add origin https://github.com/auraofintelligence/ready-set-co-op-cultural-intelligence-node.git
 git push -u origin main
 ```
 

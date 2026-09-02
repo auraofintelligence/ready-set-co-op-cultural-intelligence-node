@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://auraofintelligence.github.io/ready-set-cultural-intelligence-node/sitemap.xml
+Sitemap: https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/sitemap.xml

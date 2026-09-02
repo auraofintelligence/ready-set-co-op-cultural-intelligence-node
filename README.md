@@ -1,4 +1,4 @@
-# Ready S.E.T. Cultural Intelligence Node
+# Ready S.E.T. Co-op Cultural Intelligence Node
 
 A highly visual, multi-page public website exploring one GB200-class rack-scale node in Dunwich for Indigenous and non-Indigenous cultural collaboration, local multimodal models, an island digital twin, practical work and a global network of decentralised intelligences.
 
@@ -8,9 +8,9 @@ S.E.T. means Sustainable Employment and Training. The cooperative is presented a
 
 ## Project links and history
 
-- Repository name: [`ready-set-cultural-intelligence-node`](https://github.com/auraofintelligence/ready-set-cultural-intelligence-node).
-- Public site: [Ready S.E.T. Cultural Intelligence Node](https://auraofintelligence.github.io/ready-set-cultural-intelligence-node/).
-- First complete website package: 2 September 2026, at commit [`3cd8750`](https://github.com/auraofintelligence/ready-set-cultural-intelligence-node/commit/3cd8750e43a330e9877e3f9a56b58f31656f16a5).
+- Repository name: [`ready-set-co-op-cultural-intelligence-node`](https://github.com/auraofintelligence/ready-set-co-op-cultural-intelligence-node).
+- Public site: [Ready S.E.T. Co-op Cultural Intelligence Node](https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/).
+- First complete website package: 2 September 2026, at commit [`3cd8750`](https://github.com/auraofintelligence/ready-set-co-op-cultural-intelligence-node/commit/3cd8750e43a330e9877e3f9a56b58f31656f16a5).
 - Relationship to the earlier site: a new, separate repository with a tighter focus on the Dunwich rack example, cultural collaboration and decentralised intelligence.
 - Status: working public concept by Luke Nathan Hayes; no claimed endorsement by any First Nation, organisation, council or government.
 
@@ -22,23 +22,23 @@ S.E.T. means Sustainable Employment and Training. The cooperative is presented a
 One Dunwich GB200-class rack example for cultural collaboration, local models, an island digital twin and a global network of decentralised intelligences.
 
 **Website**  
-https://auraofintelligence.github.io/ready-set-cultural-intelligence-node/
+https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/
 
 **Topics**  
 `australia` `minjerribah` `dunwich` `indigenous-data-sovereignty` `decentralised-intelligence` `digital-twin` `community-compute` `cooperative` `multimodal-models` `cultural-collaboration` `sovereign-technology`
 
 ## Public pages
 
-- [Home](https://auraofintelligence.github.io/ready-set-cultural-intelligence-node/)
-- [One rack](https://auraofintelligence.github.io/ready-set-cultural-intelligence-node/node.html)
-- [Dunwich place study](https://auraofintelligence.github.io/ready-set-cultural-intelligence-node/dunwich.html)
-- [Cultural collaboration](https://auraofintelligence.github.io/ready-set-cultural-intelligence-node/culture.html)
-- [Everyday uses](https://auraofintelligence.github.io/ready-set-cultural-intelligence-node/uses.html)
-- [Island digital twin](https://auraofintelligence.github.io/ready-set-cultural-intelligence-node/digital-twin.html)
-- [Custom model architecture](https://auraofintelligence.github.io/ready-set-cultural-intelligence-node/model.html)
-- [Ready S.E.T. Cooperative](https://auraofintelligence.github.io/ready-set-cultural-intelligence-node/cooperative.html)
-- [Global network](https://auraofintelligence.github.io/ready-set-cultural-intelligence-node/network.html)
-- [Complete sitemap](https://auraofintelligence.github.io/ready-set-cultural-intelligence-node/sitemap.html)
+- [Home](https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/)
+- [One rack](https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/node.html)
+- [Dunwich place study](https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/dunwich.html)
+- [Cultural collaboration](https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/culture.html)
+- [Everyday uses](https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/uses.html)
+- [Island digital twin](https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/digital-twin.html)
+- [Custom model architecture](https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/model.html)
+- [Ready S.E.T. Cooperative](https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/cooperative.html)
+- [Global network](https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/network.html)
+- [Complete sitemap](https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/sitemap.html)
 
 ## What the site contains
 
