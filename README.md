@@ -1,8 +1,8 @@
 # Ready S.E.T. Co-op Cultural Intelligence Node
 
-A highly visual, multi-page public exploration of one local rack for Indigenous and non-Indigenous cultural collaboration, practical work and chosen connections to a wider network of decentralised intelligences.
+A highly visual, multi-page public exploration of one local rack in Dunwich for Indigenous and non-Indigenous cultural collaboration, existing local projects and chosen connections to a wider network of decentralised intelligences.
 
-S.E.T. means Sustainable Employment and Training. The cooperative is the work, learning, equipment and shared-service layer around the node. It is not presented as cultural authority.
+S.E.T. means Sustainable Employment and Training. The cooperative is the work, learning, equipment and shared-service layer around the node. Cultural decisions stay with the people and relationships connected to each project.
 
 ## Public site
 
@@ -10,12 +10,14 @@ S.E.T. means Sustainable Employment and Training. The cooperative is the work, l
 
 ## The focus
 
-- one GB200 NVL72-class rack as a concrete hardware reference, not a procurement decision
-- Dunwich on Minjerribah as a place study, not a site-control or approval claim
-- cultural relationship, permission, custody and human-only knowledge before datasets
-- six practical workload families for ordinary use and disruption readiness
-- a seven-movement plan that other places reshape rather than copy
-- selected node-to-node exchange without one central model
+- one GB200 NVL72-class rack as a concrete scale for workloads, power, cooling, skills and place
+- Dunwich on Minjerribah as the lived context shaping the node
+- cultural relationship, permission, custody and human-held knowledge carried through each project record
+- public links to existing local media, events, place evidence, making, repair, energy, science, music and legal-engine work
+- an interactive ordinary-Tuesday and disruption-mode comparison
+- a source-to-rack place-modelling workbench built around real local project foundations
+- a browser-local builder that exports a custom cultural compute node brief as Markdown
+- a seven-movement process and selected node-to-node exchange
 
 The wider body of work appears through links, especially the [filtered Project Atlas](https://auraofintelligence.github.io/project-atlas/?query=set&year=&family=&page=&connections=&sort=newest). This site stays with the single-node process.
 
@@ -26,7 +28,7 @@ The wider body of work appears through links, especially the [filtered Project A
 - [Dunwich place study](https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/dunwich.html)
 - [Cultural collaboration](https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/culture.html)
 - [Practical uses](https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/uses.html)
-- [Island digital twin](https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/digital-twin.html)
+- [Place modelling workbench](https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/digital-twin.html)
 - [Repeatable plan](https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/process.html)
 - [Co-op layer](https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/cooperative.html)
 - [Wider network](https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/network.html)
@@ -47,7 +49,7 @@ npm run build
 npm run check
 ```
 
-The check covers page structure, internal links, external-link behaviour, unique local hero files, raster favicons, navigation, return-to-top controls, Australian-language constraints and the no-SVG rule.
+The check covers page structure, internal links, external-link behaviour, unique local hero files, raster favicons, navigation, return-to-top controls, Australian-language constraints and the no-SVG rule. Interactive elements remain readable as ordinary content when JavaScript is unavailable.
 
 ## Source boundaries
 

@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>A layered island digital twin | Ready S.E.T. Co-op</title>
-  <meta name="description" content="An island digital twin treated as a collection of source-labelled layers, questions and permissions rather than one totalising model.">
+  <title>Place modelling workloads for Dunwich | Ready S.E.T. Co-op</title>
+  <meta name="description" content="A source-to-rack workbench connecting real Minjerribah maps, 360 evidence, media worlds and island continuity questions.">
   <meta name="theme-color" content="#090912">
   <link rel="canonical" href="https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/digital-twin.html">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
@@ -28,29 +28,71 @@
       <div class="hero-shade"></div>
       <div class="hero-light" data-hero-light></div>
       <div class="hero-content wrap">
-        <h1>Many layers, never one total view.</h1>
-        <p>An island digital twin is explored here as a shared instrument: separate source-labelled layers assembled for particular questions, with gaps, uncertainty and access boundaries left visible.</p>
-        <div class="hero-actions"><a class="button button-bright magnetic" href="#twin-layers"><span>Explore the layers</span></a><a class="button button-ghost magnetic" href="uses.html"><span>Return to practical uses</span></a></div>
+        <h1>Local models need a serious workbench.</h1>
+        <p>Dunwich already has public place records, 360 captures, event maps, prompt builders and ambitious simulation work. The rack brings those separate sources into traceable workloads built around one question at a time.</p>
+        <div class="hero-actions"><a class="button button-bright magnetic" href="#model-workbench"><span>Open the workload explorer</span></a><a class="button button-ghost magnetic" href="#model-foundations"><span>See the local foundations</span></a></div>
       </div>
       <a class="scroll-cue" href="#after-hero"><span>Explore</span><i aria-hidden="true"></i></a>
     </section>
     <div id="after-hero"></div>
-    <section class="section section-light"><div class="wrap intro-grid reveal"><div><h2>A twin is a question, not a copy</h2><p class="lead">No model contains the whole island. Every layer reflects a source, date, resolution, purpose and point of view.</p></div><div class="concept-panel"><p><strong>Provenance</strong><br>Where a layer came from and how it changed.</p><p><strong>Uncertainty</strong><br>What is measured, inferred, incomplete or disputed.</p><p><strong>Permission</strong><br>Who sees, edits, combines or exports each layer.</p></div></div></section>
+    <section class="section section-light" id="model-foundations"><div class="wrap reveal">
+        <div class="section-heading dark-heading"><h2>Real foundations already exist.</h2><p>Each public project contributes a different part of the workload: evidence, structured place records, or portable world-building instructions.</p></div>
+        <div class="local-project-grid compact-grid"><a class="local-project-card compact" href="https://auraofintelligence.github.io/dunwich-gumpi-ferry-terminal-open-data-lab/" target="_blank" rel="noopener noreferrer">
+    <span class="project-image"><img src="assets/projects/gumpi-terminal.webp" alt="" loading="lazy" decoding="async" width="960" height="600"><small>Working public prototype</small></span>
+    <span class="project-copy"><strong>Dunwich (Gumpi) Ferry Terminal Open Data Lab</strong><span>Combines 33 mapped 360 photo points, official project sources and simulation workflows around the Dunwich ferry terminal upgrade.</span><em><b>Rack connection</b>Photogrammetry, LiDAR processing and simulation for inspectable ferry gateway options.</em><i aria-hidden="true">Open project ↗</i></span>
+  </a><a class="local-project-card compact" href="https://auraofintelligence.github.io/quandamooka-country-events-engine/" target="_blank" rel="noopener noreferrer">
+    <span class="project-image"><img src="assets/projects/events-engine.webp" alt="" loading="lazy" decoding="async" width="960" height="600"><small>Working public tool</small></span>
+    <span class="project-copy"><strong>Quandamooka Country Events Engine</strong><span>Maps events, places, suppliers and approval pathways, with Markdown builders spanning idea, run, simulation, notices and aftercare.</span><em><b>Rack connection</b>Local models index event records, draft run files and test logistics.</em><i aria-hidden="true">Open project ↗</i></span>
+  </a><a class="local-project-card compact" href="https://auraofintelligence.github.io/straddie-digital-twin-builders/" target="_blank" rel="noopener noreferrer">
+    <span class="project-image"><img src="assets/projects/twin-builders.webp" alt="" loading="lazy" decoding="async" width="960" height="600"><small>Working prompt builder</small></span>
+    <span class="project-copy"><strong>Straddie Digital Twin Builders</strong><span>Turns plain choices about rooms, places and bioregions into portable prompt packets for image, video, world building and simulation tools.</span><em><b>Rack connection</b>GPU rendering develops selected prompt packets into reviewable local simulations.</em><i aria-hidden="true">Open project ↗</i></span>
+  </a></div>
+      </div></section>
 
-      <section class="section section-ink" id="twin-layers"><div class="wrap reveal"><h2>A layered demonstration</h2><div class="twin-lab" data-twin-lab>
-        <div class="twin-view" aria-hidden="true"><canvas data-twin-canvas></canvas><div class="island-shape"></div></div>
-        <div class="twin-controls">
-          <label><input type="checkbox" data-twin-layer="coast" checked> Coast and terrain <span>Public source example</span></label>
-          <label><input type="checkbox" data-twin-layer="water" checked> Water and weather <span>Source date required</span></label>
-          <label><input type="checkbox" data-twin-layer="movement" checked> Movement and access <span>Aggregated example</span></label>
-          <label><input type="checkbox" data-twin-layer="infrastructure"> Infrastructure <span>Access varies</span></label>
-          <label><input type="checkbox" data-twin-layer="culture"> Cultural layer <span>Not automatically available</span></label>
+      <section class="section section-ink" id="model-workbench"><div class="wrap reveal">
+        <div class="section-heading"><h2>Choose the question. Trace the whole job.</h2><p>Every selection exposes the source, rack work, output, review record and present project status.</p></div>
+        <div class="workbench-explorer" data-workbench-explorer>
+          <div class="workbench-tabs" aria-label="Choose a local modelling workload">
+            <button class="active" type="button" data-workbench-mode="gumpi" aria-controls="workbench-gumpi" aria-pressed="true"><span>Gumpi 360</span><small>Site evidence</small></button>
+            <button type="button" data-workbench-mode="events" aria-controls="workbench-events" aria-pressed="false"><span>Events map</span><small>Place coordination</small></button>
+            <button type="button" data-workbench-mode="screen" aria-controls="workbench-screen" aria-pressed="false"><span>Screen world</span><small>Immersive media</small></button>
+            <button type="button" data-workbench-mode="continuity" aria-controls="workbench-continuity" aria-pressed="false"><span>Node continuity</span><small>Island systems</small></button>
+          </div>
+          <div class="workbench-panels" aria-live="polite">
+            <article class="workbench-panel" id="workbench-gumpi" data-workbench-panel="gumpi">
+              <header><small>Working public prototype</small><h3>Explore ferry gateway choices through traceable captures.</h3></header>
+              <div class="workbench-flow"><div><small>Source</small><strong>33 GPS-rounded 360 points and official project records</strong></div><i aria-hidden="true">→</i><div><small>Rack work</small><strong>Align imagery, compare options and render walkthroughs</strong></div><i aria-hidden="true">→</i><div><small>Output</small><strong>Reviewable views with date, precision and source attached</strong></div></div>
+              <dl><div><dt>Local project</dt><dd>Dunwich (Gumpi) Ferry Terminal Open Data Lab</dd></div><div><dt>Review focus</dt><dd>Source quality, missing views, public interpretation and changed conditions</dd></div><div><dt>Next compute job</dt><dd>Photogrammetry and LiDAR processing from stronger capture sets</dd></div></dl>
+              <a class="button button-bright magnetic" href="https://auraofintelligence.github.io/dunwich-gumpi-ferry-terminal-open-data-lab/" target="_blank" rel="noopener noreferrer"><span>Open the evidence lab</span></a>
+            </article>
+            <article class="workbench-panel" id="workbench-events" data-workbench-panel="events">
+              <header><small>Working public tool</small><h3>Turn events and places into reusable coordination records.</h3></header>
+              <div class="workbench-flow"><div><small>Source</small><strong>Organiser records, places, suppliers and public pathways</strong></div><i aria-hidden="true">→</i><div><small>Rack work</small><strong>Index records, test runs and assemble local notices</strong></div><i aria-hidden="true">→</i><div><small>Output</small><strong>Maps and downloadable Markdown with provenance intact</strong></div></div>
+              <dl><div><dt>Local project</dt><dd>Quandamooka Country Events Engine</dd></div><div><dt>Review focus</dt><dd>Organiser source, dates, place precision and aftercare</dd></div><div><dt>Next compute job</dt><dd>Local semantic search and richer event simulations</dd></div></dl>
+              <a class="button button-bright magnetic" href="https://auraofintelligence.github.io/quandamooka-country-events-engine/" target="_blank" rel="noopener noreferrer"><span>Open the Events Engine</span></a>
+            </article>
+            <article class="workbench-panel" id="workbench-screen" data-workbench-panel="screen">
+              <header><small>Connected public builders</small><h3>Move from a chosen place to a reviewable media world.</h3></header>
+              <div class="workbench-flow"><div><small>Source</small><strong>Project media, scene choices and portable prompt packets</strong></div><i aria-hidden="true">→</i><div><small>Rack work</small><strong>Edit, transcribe, generate, render and version locally</strong></div><i aria-hidden="true">→</i><div><small>Output</small><strong>Selected film, image, spatial scene or simulation version</strong></div></div>
+              <dl><div><dt>Local projects</dt><dd>Screen & Media Network and Straddie Digital Twin Builders</dd></div><div><dt>Review focus</dt><dd>Creator terms, contributors, credits, locations and release version</dd></div><div><dt>Next compute job</dt><dd>High-resolution rendering and interactive scene generation</dd></div></dl>
+              <a class="button button-bright magnetic" href="https://auraofintelligence.github.io/straddie-digital-twin-builders/" target="_blank" rel="noopener noreferrer"><span>Open the scene builder</span></a>
+            </article>
+            <article class="workbench-panel" id="workbench-continuity" data-workbench-panel="continuity">
+              <header><small>Proposed rack workload</small><h3>Explore how island systems shape useful node operation.</h3></header>
+              <div class="workbench-flow"><div><small>Source</small><strong>Power, cooling, heat, ferry, network and weather records</strong></div><i aria-hidden="true">→</i><div><small>Rack work</small><strong>Run scenarios across demand, disruption and recovery choices</strong></div><i aria-hidden="true">→</i><div><small>Output</small><strong>Service priorities, operating envelope and recovery practice</strong></div></div>
+              <dl><div><dt>Local project</dt><dd>Dunwich cultural compute node</dd></div><div><dt>Review focus</dt><dd>Measured inputs, energy budget, maintained services and people involved</dd></div><div><dt>Next compute job</dt><dd>A source-labelled node continuity model built from real engineering data</dd></div></dl>
+              <a class="button button-bright magnetic" href="node.html"><span>Explore the rack</span></a>
+            </article>
+          </div>
         </div>
-      </div></div></section>
+      </div></section>
 
-      <section class="section section-blue"><div class="wrap reveal"><h2>A focused first twin</h2><div class="three-grid"><article class="solid-card"><h3>One defining question</h3><p>For example: how do heat, power demand and service priorities interact around one possible node?</p></article><article class="solid-card"><h3>Purpose-fit sources</h3><p>Each source arrives with date, ownership, licence, spatial limits and uncertainty.</p></article><article class="solid-card"><h3>A reviewable result</h3><p>People compare the model with lived knowledge, correct it and decide whether another layer is worthwhile.</p></article></div></div></section>
+      <section class="section section-blue"><div class="wrap prototype-status reveal">
+        <div><small>Next-stage prototype</small><h2>The Minjerribah Living Twin belongs in the rebuild queue.</h2><p class="lead">Its substantial data and systems catalogue now needs stronger spatial geometry, architecture, compute and embedding quality before it serves this site as a working instrument.</p></div>
+        <a class="button button-dark magnetic" href="https://auraofintelligence.github.io/minjerribah-living-twin/" target="_blank" rel="noopener noreferrer"><span>View the current prototype separately</span></a>
+      </div></section>
 
-      <section class="section section-light"><div class="wrap reveal"><h2>What the twin does not settle</h2><div class="boundary-list"><p><strong>Country is not reduced to geometry.</strong> A spatial layer is not cultural authority.</p><p><strong>Simulation is not permission.</strong> A plausible model does not approve a project.</p><p><strong>Data density is not truth.</strong> More measurements do not erase missing context or contested interpretation.</p><p><strong>Prediction is not a decision.</strong> Outputs remain material for human judgement.</p></div></div></section>
+      <section class="section section-light"><div class="wrap country-principle reveal"><h2>Country exceeds every model.</h2><div><p><strong>Computational records</strong><span>Public maps, node telemetry, chosen observations and project material remain distinct, sourced layers.</span></p><p><strong>Living interpretation</strong><span>People connected to place interpret what a layer means, where it ends and what another view misses.</span></p><p><strong>Cultural relationships</strong><span>Cultural knowledge follows the people, purpose and relationships around a specific activity rather than an automatic map control.</span></p></div></div></section>
   </main>
   <footer class="site-footer">
     <div class="wrap route-nav">
@@ -60,10 +102,9 @@
     <div class="wrap footer-base">
       <div><strong>Ready S.E.T. Co-op</strong><p>A self-sovereign exploration of one local cultural compute node.</p></div>
       <div class="footer-links"><a href="sitemap.html">Sitemap</a><a href="LICENSE">Licence</a><a href="https://github.com/auraofintelligence/ready-set-co-op-cultural-intelligence-node" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
-      <p class="boundary-note">Working concept by Luke Nathan Hayes. No claimed endorsement, approval, site control or cultural authority.</p>
+      <p class="boundary-note">Public working concept by Luke Nathan Hayes. Project status, relationships and sources are identified where they appear.</p>
     </div>
   </footer>
   <button class="to-top" type="button" aria-label="Return to top" data-to-top><span aria-hidden="true">↑</span></button>
-  <canvas class="ambient-canvas" data-ambient-canvas aria-hidden="true"></canvas>
 </body>
 </html>

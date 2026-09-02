@@ -20,10 +20,11 @@ function walk(directory) {
 walk(root);
 
 for (const file of allFiles) {
+  const vectorWord = ['s', 'v', 'g'].join('');
+  if (path.extname(file).toLowerCase() === `.${vectorWord}`) errors.push(`${path.relative(root, file)}: prohibited vector-image file`);
   if (!textExtensions.has(path.extname(file).toLowerCase()) && path.basename(file) !== 'LICENSE') continue;
   const relative = path.relative(root, file);
   const source = fs.readFileSync(file, 'utf8');
-  const vectorWord = ['s', 'v', 'g'].join('');
   const vectorReference = new RegExp(`<${vectorWord}\\b|image\\/${vectorWord}|\\.${vectorWord}(?:\\b|[?#])`, 'i');
   if (vectorReference.test(source)) errors.push(`${relative}: prohibited vector-image reference`);
   if (new RegExp(`[\\u2013\\u2014]`).test(source)) errors.push(`${relative}: contains an en dash or em dash`);
@@ -86,9 +87,29 @@ for (const icon of ['assets/favicon-32.png', 'assets/favicon-192.png', 'assets/a
 
 const sitemap = fs.readFileSync(path.join(root, 'sitemap.xml'), 'utf8');
 const stylesheet = fs.readFileSync(path.join(root, 'assets', 'styles.css'), 'utf8');
+const siteScript = fs.readFileSync(path.join(root, 'assets', 'site.js'), 'utf8');
 if (/\.reveal\s*\{[^}]*opacity\s*:\s*0(?:\D|$)/i.test(stylesheet)) errors.push('styles.css: meaningful content is hidden until JavaScript runs');
 const arrivalRule = stylesheet.match(/\.reveal\.visible \.colour-card[^}]+}/i)?.[0] ?? '';
 if (!/animation-iteration-count\s*:\s*1/i.test(arrivalRule)) errors.push('styles.css: card entrance animation is not locked to one pass');
+if (/animation(?:-iteration-count)?\s*:[^;}]*infinite/i.test(stylesheet)) errors.push('styles.css: contains a repeating animation');
+for (const removedEffect of ['data-twin-canvas', 'data-network-canvas', 'data-ambient-canvas']) {
+  if (heroPages.some(page => fs.readFileSync(path.join(root, page), 'utf8').includes(removedEffect))) errors.push(`generated pages: obsolete decorative effect ${removedEffect}`);
+  if (siteScript.includes(removedEffect)) errors.push(`site.js: obsolete decorative effect ${removedEffect}`);
+}
+for (const image of fs.readdirSync(path.join(root, 'assets', 'projects'))) {
+  if (!/\.(?:webp|png|jpe?g)$/i.test(image)) errors.push(`assets/projects/${image}: project image is not raster`);
+}
+for (const feature of [
+  ['index.html', 'data-boundary-explorer'],
+  ['dunwich.html', 'data-place-explorer'],
+  ['culture.html', 'data-permission-board'],
+  ['uses.html', 'data-mode-explorer'],
+  ['digital-twin.html', 'data-workbench'],
+  ['process.html', 'data-node-plan-builder']
+]) {
+  const [page, marker] = feature;
+  if (!fs.readFileSync(path.join(root, page), 'utf8').includes(marker)) errors.push(`${page}: missing ${marker}`);
+}
 for (const page of pages) {
   const route = page === 'index.html' ? 'ready-set-co-op-cultural-intelligence-node/' : `ready-set-co-op-cultural-intelligence-node/${page}`;
   if (!sitemap.includes(route)) errors.push(`sitemap.xml: missing ${page}`);
@@ -110,4 +131,4 @@ if (errors.length) {
 }
 
 console.log(`Checked ${pages.length} main pages, 404.html, ${allFiles.length} repository files and ${heroHashes.size} unique local raster heroes.`);
-console.log('Confirmed: complete navigation, secure external links, raster favicons, no remote images, no vector references, no decorative eyebrows, no directive or permission language, no timid framing, and no en dashes or em dashes.');
+console.log('Confirmed: complete navigation, secure external links, unique raster heroes, raster project imagery, meaningful interaction markers, single-pass motion, no decorative canvas effects, no remote images, no vector references, no decorative eyebrows, no directive or permission language, no timid framing, and no en dashes or em dashes.');

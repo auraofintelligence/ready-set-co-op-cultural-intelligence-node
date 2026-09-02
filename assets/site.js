@@ -31,7 +31,7 @@
       document.body.classList.remove('menu-open');
     }
   });
-  toTop?.addEventListener('click', () => window.scrollTo({ top: 0, behaviour: reduced ? 'auto' : 'smooth', behavior: reduced ? 'auto' : 'smooth' }));
+  toTop?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: reduced ? 'auto' : 'smooth' }));
 
   document.querySelectorAll('a[href^="http"]').forEach(link => {
     link.target = '_blank';
@@ -39,7 +39,7 @@
   });
 
   const reveal = document.querySelectorAll('.reveal');
-  document.querySelectorAll('.three-grid, .four-grid, .question-grid, .portal-grid, .use-grid, .sitemap-grid').forEach(grid => {
+  document.querySelectorAll('.three-grid, .four-grid, .question-grid, .portal-grid, .use-grid, .sitemap-grid, .local-project-grid, .mode-panel').forEach(grid => {
     [...grid.children].forEach((card, index) => card.style.setProperty('--card-index', index));
   });
   if (reduced || !('IntersectionObserver' in window)) {
@@ -87,20 +87,151 @@
     });
   }
 
+  const followPanelLight = (panel, xName, yName) => {
+    if (reduced || !matchMedia('(pointer: fine)').matches) return;
+    panel.addEventListener('pointermove', event => {
+      const rect = panel.getBoundingClientRect();
+      panel.style.setProperty(xName, `${((event.clientX - rect.left) / rect.width) * 100}%`);
+      panel.style.setProperty(yName, `${((event.clientY - rect.top) / rect.height) * 100}%`);
+    });
+  };
+
+  const boundaryExplorer = document.querySelector('[data-boundary-explorer]');
+  if (boundaryExplorer) {
+    const buttons = [...boundaryExplorer.querySelectorAll('[data-boundary-mode]')];
+    const panels = [...boundaryExplorer.querySelectorAll('[data-boundary-panel]')];
+    boundaryExplorer.querySelectorAll('.material-route').forEach(route => {
+      [...route.children].forEach((step, index) => step.style.setProperty('--route-index', index));
+    });
+    const showBoundary = key => {
+      buttons.forEach(button => {
+        const active = button.dataset.boundaryMode === key;
+        button.classList.toggle('active', active);
+        button.setAttribute('aria-pressed', String(active));
+      });
+      panels.forEach(panel => { panel.hidden = panel.dataset.boundaryPanel !== key; });
+    };
+    boundaryExplorer.classList.add('is-enhanced');
+    buttons.forEach(button => button.addEventListener('click', () => showBoundary(button.dataset.boundaryMode)));
+    showBoundary(buttons.find(button => button.classList.contains('active'))?.dataset.boundaryMode || 'public');
+    followPanelLight(boundaryExplorer, '--explorer-x', '--explorer-y');
+  }
+
+  const placeExplorer = document.querySelector('[data-place-explorer]');
+  if (placeExplorer) {
+    const buttons = [...placeExplorer.querySelectorAll('[data-place-lens]')];
+    const panels = [...placeExplorer.querySelectorAll('[data-place-panel]')];
+    const showPlaceLens = key => {
+      buttons.forEach(button => {
+        const active = button.dataset.placeLens === key;
+        button.classList.toggle('active', active);
+        button.setAttribute('aria-pressed', String(active));
+      });
+      panels.forEach(panel => { panel.hidden = panel.dataset.placePanel !== key; });
+    };
+    placeExplorer.classList.add('is-enhanced');
+    buttons.forEach(button => button.addEventListener('click', () => showPlaceLens(button.dataset.placeLens)));
+    showPlaceLens(buttons.find(button => button.classList.contains('active'))?.dataset.placeLens || 'relationships');
+    followPanelLight(placeExplorer, '--place-x', '--place-y');
+  }
+
   const permissionCopy = {
-    public: ['Public material', 'Material intentionally released for broad access, with provenance, attribution and reuse terms still attached.'],
-    purpose: ['Purpose-shared material', 'Material shared for a stated activity, people and period. A new use returns to a new conversation.'],
-    group: ['Group-held material', 'Access remains with a family, organisation or cultural group under its own protocols and responsibilities.'],
-    human: ['Human-only knowledge', 'Knowledge or relationship kept outside digital systems. Its value does not depend on machine access.'],
-    unknown: ['Unresolved material', 'Material whose rights, provenance or appropriate use are unclear stays separate until people with standing resolve it.']
+    view: ['Viewing has its own terms.', 'A person may view material for a named activity while storage, transcription, model work and publication remain separate conversations.'],
+    store: ['Storage names custody and duration.', 'The record identifies where working files, backups, logs and temporary copies live, who holds them and when review returns.'],
+    transcribe: ['Transcription creates a new record.', 'Speech, names, language, context and corrections stay connected to contributors and the purpose of the project.'],
+    train: ['Model work names inputs and outputs.', 'The project records source material, local processing, model artefacts, access, evaluation and the outputs selected for release.'],
+    publish: ['Publication selects a particular output.', 'A public film, event listing or model view carries its source, contributors, credits, version and reuse terms.'],
+    withdraw: ['Review remains part of the relationship.', 'People revisit access, purpose, corrections, retention and withdrawal as material and projects develop over time.']
   };
   const permissionBoard = document.querySelector('[data-permission-board]');
   permissionBoard?.querySelectorAll('[data-layer]').forEach(tab => tab.addEventListener('click', () => {
-    permissionBoard.querySelectorAll('[data-layer]').forEach(item => item.classList.toggle('active', item === tab));
+    permissionBoard.querySelectorAll('[data-layer]').forEach(item => {
+      const active = item === tab;
+      item.classList.toggle('active', active);
+      item.setAttribute('aria-pressed', String(active));
+    });
     const [heading, copy] = permissionCopy[tab.dataset.layer];
     const target = permissionBoard.querySelector('[data-layer-copy]');
     target.innerHTML = `<h3>${heading}</h3><p>${copy}</p>`;
   }));
+
+  const modeExplorer = document.querySelector('[data-mode-explorer]');
+  if (modeExplorer) {
+    const buttons = [...modeExplorer.querySelectorAll('[data-mode]')];
+    const panels = [...modeExplorer.querySelectorAll('[data-mode-panel]')];
+    const showMode = key => {
+      buttons.forEach(button => {
+        const active = button.dataset.mode === key;
+        button.classList.toggle('active', active);
+        button.setAttribute('aria-pressed', String(active));
+      });
+      panels.forEach(panel => { panel.hidden = panel.dataset.modePanel !== key; });
+    };
+    modeExplorer.classList.add('is-enhanced');
+    buttons.forEach(button => button.addEventListener('click', () => showMode(button.dataset.mode)));
+    showMode(buttons.find(button => button.classList.contains('active'))?.dataset.mode || 'everyday');
+  }
+
+  const workbenchExplorer = document.querySelector('[data-workbench-explorer]');
+  if (workbenchExplorer) {
+    const buttons = [...workbenchExplorer.querySelectorAll('[data-workbench-mode]')];
+    const panels = [...workbenchExplorer.querySelectorAll('[data-workbench-panel]')];
+    const showWorkload = key => {
+      buttons.forEach(button => {
+        const active = button.dataset.workbenchMode === key;
+        button.classList.toggle('active', active);
+        button.setAttribute('aria-pressed', String(active));
+      });
+      panels.forEach(panel => { panel.hidden = panel.dataset.workbenchPanel !== key; });
+    };
+    workbenchExplorer.classList.add('is-enhanced');
+    buttons.forEach(button => button.addEventListener('click', () => showWorkload(button.dataset.workbenchMode)));
+    showWorkload(buttons.find(button => button.classList.contains('active'))?.dataset.workbenchMode || 'gumpi');
+    followPanelLight(workbenchExplorer, '--workbench-x', '--workbench-y');
+  }
+
+  const planBuilder = document.querySelector('[data-node-plan-builder]');
+  if (planBuilder) {
+    const fields = [...planBuilder.querySelectorAll('textarea[name]')];
+    const preview = planBuilder.querySelector('[data-plan-preview]');
+    const message = planBuilder.querySelector('[data-plan-message]');
+    const labels = {
+      place: 'Place and purpose',
+      relationships: 'Relationships and permissions',
+      everyday: 'Everyday workloads',
+      disruption: 'Disruption roles',
+      people: 'Equipment holder and people',
+      hardware: 'Hardware and connections',
+      evidence: 'Evidence and next review'
+    };
+    const buildBrief = () => {
+      const sections = fields.map(field => `## ${labels[field.name]}\n\n${field.value.trim() || '_Open for exploration_'}`);
+      return `# Cultural compute node working brief\n\n${sections.join('\n\n')}\n`;
+    };
+    const updateBrief = () => { preview.textContent = buildBrief(); };
+    fields.forEach(field => field.addEventListener('input', updateBrief));
+    updateBrief();
+    planBuilder.querySelector('[data-plan-copy]')?.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(buildBrief());
+        message.textContent = 'Markdown copied.';
+      } catch {
+        message.textContent = 'Copy access was unavailable. The live brief remains ready to select.';
+      }
+    });
+    planBuilder.querySelector('[data-plan-download]')?.addEventListener('click', () => {
+      const file = new Blob([buildBrief()], { type: 'text/markdown;charset=utf-8' });
+      const url = URL.createObjectURL(file);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'cultural-compute-node-working-brief.md';
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
+      message.textContent = 'Markdown brief downloaded.';
+    });
+  }
 
   const roleCopy = {
     operator: ['Node operations', 'Monitoring, access, backups, incident records, service priorities and recovery practice.'],
@@ -118,102 +249,4 @@
     roleWheel.querySelector('[data-role-copy]').innerHTML = `<h3>${heading}</h3><p>${copy}</p>`;
   }));
 
-  const fitCanvas = canvas => {
-    const ratio = Math.min(window.devicePixelRatio || 1, 2);
-    const rect = canvas.getBoundingClientRect();
-    const width = Math.max(1, Math.round(rect.width * ratio));
-    const height = Math.max(1, Math.round(rect.height * ratio));
-    if (canvas.width !== width || canvas.height !== height) {
-      canvas.width = width;
-      canvas.height = height;
-    }
-    return { width, height, ratio };
-  };
-
-  const ambient = document.querySelector('[data-ambient-canvas]');
-  if (ambient && !reduced) {
-    const context = ambient.getContext('2d');
-    const motes = Array.from({ length: 22 }, (_, index) => ({
-      x: (index * 73 % 100) / 100,
-      y: (index * 41 % 100) / 100,
-      r: 1 + (index % 4) * .6,
-      speed: .0007 + (index % 5) * .00015
-    }));
-    const draw = time => {
-      const { width, height } = fitCanvas(ambient);
-      context.clearRect(0, 0, width, height);
-      motes.forEach((mote, index) => {
-        const y = (mote.y + time * mote.speed * .001) % 1;
-        const x = mote.x + Math.sin(time * .0003 + index) * .015;
-        context.beginPath();
-        context.fillStyle = index % 3 === 0 ? 'rgba(255,112,220,.65)' : index % 3 === 1 ? 'rgba(85,228,226,.65)' : 'rgba(255,201,79,.55)';
-        context.arc(x * width, y * height, mote.r * (window.devicePixelRatio || 1), 0, Math.PI * 2);
-        context.fill();
-      });
-      requestAnimationFrame(draw);
-    };
-    requestAnimationFrame(draw);
-  }
-
-  const twinCanvas = document.querySelector('[data-twin-canvas]');
-  if (twinCanvas) {
-    const context = twinCanvas.getContext('2d');
-    const colours = { coast: '#6fffd2', water: '#61a8ff', movement: '#ffcf63', infrastructure: '#ff76c9', culture: '#ae86ff' };
-    const drawTwin = time => {
-      const { width, height } = fitCanvas(twinCanvas);
-      context.clearRect(0, 0, width, height);
-      const active = [...document.querySelectorAll('[data-twin-layer]:checked')].map(input => input.dataset.twinLayer);
-      active.forEach((layer, layerIndex) => {
-        context.strokeStyle = colours[layer];
-        context.globalAlpha = .45;
-        context.lineWidth = 1.4 * (window.devicePixelRatio || 1);
-        for (let line = 0; line < 5; line++) {
-          context.beginPath();
-          for (let x = 0; x <= width; x += 12) {
-            const base = height * (.22 + layerIndex * .13) + line * 9;
-            const y = base + Math.sin(x * .018 + time * .0007 + line + layerIndex) * (10 + layerIndex * 2);
-            x === 0 ? context.moveTo(x, y) : context.lineTo(x, y);
-          }
-          context.stroke();
-        }
-      });
-      context.globalAlpha = 1;
-      if (!reduced) requestAnimationFrame(drawTwin);
-    };
-    drawTwin(0);
-    document.querySelectorAll('[data-twin-layer]').forEach(input => input.addEventListener('change', () => reduced && drawTwin(0)));
-  }
-
-  const networkCanvas = document.querySelector('[data-network-canvas]');
-  if (networkCanvas) {
-    const context = networkCanvas.getContext('2d');
-    const nodes = Array.from({ length: 17 }, (_, index) => ({
-      x: .08 + ((index * 47) % 84) / 100,
-      y: .1 + ((index * 31) % 80) / 100,
-      radius: 5 + index % 5,
-      phase: index * .7
-    }));
-    const drawNetwork = time => {
-      const { width, height } = fitCanvas(networkCanvas);
-      context.clearRect(0, 0, width, height);
-      const points = nodes.map(node => ({ x: (node.x + Math.sin(time * .0002 + node.phase) * .01) * width, y: (node.y + Math.cos(time * .00023 + node.phase) * .012) * height, radius: node.radius }));
-      context.lineWidth = 1;
-      points.forEach((point, index) => points.slice(index + 1).forEach(other => {
-        const distance = Math.hypot(point.x - other.x, point.y - other.y);
-        if (distance < width * .23) {
-          context.strokeStyle = `rgba(104,225,224,${Math.max(0, .32 - distance / width)})`;
-          context.beginPath();context.moveTo(point.x, point.y);context.lineTo(other.x, other.y);context.stroke();
-        }
-      }));
-      points.forEach((point, index) => {
-        const gradient = context.createRadialGradient(point.x, point.y, 0, point.x, point.y, point.radius * 5);
-        const colour = index % 3 === 0 ? '255,112,220' : index % 3 === 1 ? '85,228,226' : '255,201,79';
-        gradient.addColorStop(0, `rgba(${colour},1)`);gradient.addColorStop(1, `rgba(${colour},0)`);
-        context.fillStyle = gradient;context.beginPath();context.arc(point.x, point.y, point.radius * 5, 0, Math.PI * 2);context.fill();
-        context.fillStyle = '#fff';context.beginPath();context.arc(point.x, point.y, point.radius, 0, Math.PI * 2);context.fill();
-      });
-      if (!reduced) requestAnimationFrame(drawNetwork);
-    };
-    drawNetwork(0);
-  }
 })();
