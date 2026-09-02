@@ -10,7 +10,7 @@
 | Location | Minjerribah / North Stradbroke Island, Redland City, Queensland |
 | Date | 24 August 2026 |
 
-Introduction. My name is Luke Nathan Hayes. I am a private citizen living on Minjerribah and the operator of Strange but True: Tech, Art and Ideas That'll Help, an existing sole-trader practice combining practical technology and AI support, art, media, events, business development and grant writing. I am also developing Ready S.E.T. Co, meaning Sustainable Employment and Training, as a proposed community-owned cooperative. I nominate the Ballow Road site in Dunwich as one possible location for a community-scale AI compute, learning and disaster-resilience pilot. This submission continues the civic-infrastructure argument in my earlier Submission 2 to the Local Government Funding and Fiscal Sustainability inquiry.
+Introduction. My name is Luke Nathan Hayes. I am a private citizen living on Minjerribah and the operator of [Strange but True: Tech, Art and Ideas That'll Help](https://auraofintelligence.github.io/strange-but-true/), an existing sole-trader practice combining practical technology and AI support, art, media, events, business development and grant writing. I am also developing Ready S.E.T. Co, meaning Sustainable Employment and Training, as a proposed community-owned cooperative. I nominate [the Ballow Road site in Dunwich](https://auraofintelligence.github.io/ready-set-co-op-trust-hub/ballow-road.html) as one possible location for a community-scale AI compute, learning and disaster-resilience pilot. This submission continues the civic-infrastructure argument in my earlier [Submission 2 to the Local Government Funding and Fiscal Sustainability inquiry](https://www.aph.gov.au/DocumentStore.ashx?id=b0bb44ad-3515-4c22-bdb7-d5db605f6e0a&subId=780115).
 
 | Central proposition<br>Australia should not treat AI infrastructure as synonymous with hyperscale data centres.<br>We need a federated compute continuum from personal devices, through neighbourhood edge systems and serious community-scale compute, to state, national, hyperscale, quantum and future orbital systems.<br>The missing middle should be built as shared national infrastructure for capability, resilience, sovereignty and public learning. |
 | --- |
@@ -88,18 +88,18 @@ Minimum public reporting: workloads and utilisation; energy, cooling, water and 
 
 ### Selected sources
 
-[1] Senate inquiry: Artificial intelligence and data centres
+[1] [Senate inquiry: Artificial intelligence and data centres](https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Environment_and_Communications/AIdatacentres48P)
 
-[2] Australian Government National AI Plan
+[2] [Australian Government National AI Plan](https://www.industry.gov.au/publications/national-ai-plan)
 
-[3] Expectations of data centres and AI infrastructure developers
+[3] [Expectations of data centres and AI infrastructure developers](https://www.industry.gov.au/publications/expectations-data-centres-and-ai-infrastructure-developers)
 
-[4] CSIRO Vetra: sovereign, trusted AI computing at the edge
+[4] [CSIRO Vetra: sovereign, trusted AI computing at the edge](https://www.csiro.au/en/news/All/News/2026/May/Vetra-AI-infrastructure)
 
-[5] Parliamentary Library: AUKUS submarine cost and opportunity cost
+[5] [Parliamentary Library: AUKUS submarine cost and opportunity cost](https://www.aph.gov.au/About_Parliament/Parliamentary_departments/Parliamentary_Library/Research/Research_Papers/2024-25/The_deterrence_advantage_of_nuclear_powered_submarines)
 
-[6] Luke Nathan Hayes, Submission 2: Local Government Funding and Fiscal Sustainability
+[6] [Luke Nathan Hayes, Submission 2: Local Government Funding and Fiscal Sustainability](https://www.aph.gov.au/DocumentStore.ashx?id=b0bb44ad-3515-4c22-bdb7-d5db605f6e0a&subId=780115)
 
-[7] Strange but True
+[7] [Strange but True](https://auraofintelligence.github.io/strange-but-true/)
 
-[8] Ballow Road pilot concept
+[8] [Ballow Road pilot concept](https://auraofintelligence.github.io/ready-set-co-op-trust-hub/ballow-road.html)

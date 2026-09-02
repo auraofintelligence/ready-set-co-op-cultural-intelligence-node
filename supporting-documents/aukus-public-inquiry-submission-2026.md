@@ -10,7 +10,7 @@
 | Location | Minjerribah / North Stradbroke Island, Redland City, Queensland |
 | Date | 24 August 2026 |
 
-Introduction. My name is Luke Nathan Hayes. I am a private citizen from Minjerribah and the operator of Strange but True: Tech, Art and Ideas That'll Help. I am developing Ready S.E.T. Co, meaning Sustainable Employment and Training, as a proposed cooperative, and I nominate Ballow Road in Dunwich as one possible community compute, learning and disaster-resilience pilot. This is my personal strategic perspective, not a claim of endorsement by government, council or Traditional Owners.
+Introduction. My name is Luke Nathan Hayes. I am a private citizen from Minjerribah and the operator of [Strange but True: Tech, Art and Ideas That'll Help](https://auraofintelligence.github.io/strange-but-true/). I am developing Ready S.E.T. Co, meaning Sustainable Employment and Training, as a proposed cooperative, and I nominate [Ballow Road in Dunwich](https://auraofintelligence.github.io/ready-set-co-op-trust-hub/ballow-road.html) as one possible community compute, learning and disaster-resilience pilot. This is my personal strategic perspective, not a claim of endorsement by government, council or Traditional Owners.
 
 | The question I ask this Inquiry<br>AUKUS is presented as a multi-decade investment in security, sovereignty, advanced technology, skills and deterrence.<br>What comparable positive-sum security options were considered for distributed intelligence, education, scientific capability, climate and disaster resilience, and peaceful regional cooperation?<br>Australia should not place its strategic future in one submarine program, one alliance, one vendor ecosystem or one definition of security. |
 | --- |
@@ -66,18 +66,18 @@ Do not put all our eggs in one basket. Build the interfaces between the baskets.
 
 ### Selected sources
 
-[1] AUKUS Public Inquiry: key issues, submissions and Terms of Reference
+[1] [AUKUS Public Inquiry: key issues, submissions and Terms of Reference](https://aukuspublicinquiry.com/)
 
-[2] Parliamentary Library: cost and opportunity cost of nuclear-powered submarines
+[2] [Parliamentary Library: cost and opportunity cost of nuclear-powered submarines](https://www.aph.gov.au/About_Parliament/Parliamentary_departments/Parliamentary_Library/Research/Research_Papers/2024-25/The_deterrence_advantage_of_nuclear_powered_submarines)
 
-[3] Australian Government National AI Plan
+[3] [Australian Government National AI Plan](https://www.industry.gov.au/publications/national-ai-plan)
 
-[4] Expectations of data centres and AI infrastructure developers
+[4] [Expectations of data centres and AI infrastructure developers](https://www.industry.gov.au/publications/expectations-data-centres-and-ai-infrastructure-developers)
 
-[5] CSIRO Vetra: sovereign, trusted AI computing at the edge
+[5] [CSIRO Vetra: sovereign, trusted AI computing at the edge](https://www.csiro.au/en/news/All/News/2026/May/Vetra-AI-infrastructure)
 
-[6] Defence: AUKUS advanced capabilities and Pillar II priorities
+[6] [Defence: AUKUS advanced capabilities and Pillar II priorities](https://www.defence.gov.au/defence-activities/programs-initiatives/aukus-advanced-capabilities)
 
-[7] Strange but True
+[7] [Strange but True](https://auraofintelligence.github.io/strange-but-true/)
 
-[8] Ballow Road pilot concept
+[8] [Ballow Road pilot concept](https://auraofintelligence.github.io/ready-set-co-op-trust-hub/ballow-road.html)

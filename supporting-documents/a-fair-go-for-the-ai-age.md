@@ -18,9 +18,9 @@ This submission asks the next physical-infrastructure question:
 
 Where should the intelligence that operates those future civic systems actually live, who should own it, and who should be capable of understanding and changing it?
 
-The Senate's current inquiry provides an appropriate place to ask that question. Its terms of reference explicitly cover the effectiveness of Australia's regulatory frameworks for data-centre growth, existing and future dealings with global AI companies, impacts on communities, industries, water and energy, and “any other related matters”. Submissions currently close on 1 September 2026. [1]
+The Senate's current inquiry provides an appropriate place to ask that question. Its terms of reference explicitly cover the effectiveness of Australia's regulatory frameworks for data-centre growth, existing and future dealings with global AI companies, impacts on communities, industries, water and energy, and “any other related matters”. Submissions currently close on 1 September 2026. [\[1\]](https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Environment_and_Communications/AIdatacentres48P)
 
-The Albanese Government has simultaneously announced that it intends to legislate Australian Standards for AI, building on its Data Centre Expectations, using Australian values as a benchmark and seeking to strengthen sovereignty and ensure community benefit. The Office of AI was established in the Department of the Prime Minister and Cabinet on 15 July 2026. [2]
+The Albanese Government has simultaneously announced that it intends to legislate Australian Standards for AI, building on its Data Centre Expectations, using Australian values as a benchmark and seeking to strengthen sovereignty and ensure community benefit. The Office of AI was established in the Department of the Prime Minister and Cabinet on 15 July 2026. [\[2\]](https://www.pm.gov.au/media/ai-australias-interests)
 
 My proposal is therefore straightforward:
 
@@ -30,9 +30,9 @@ This is not a rejection of data centres. It is an argument for architectural div
 
 Nor is the alignment between this proposal and current Australian policy an accidental discovery. I have deliberately been developing these ideas across multiple scales: Redlands, Queensland, Australia, Quandamooka Country and other Native Nations, Oceania, international civic networks, the United Kingdom, United Nations frameworks, treaty relationships, sister-city relationships and ultimately a global interoperable system. The different pieces are intended to fit together rather than being isolated proposals.
 
-The Australian Government's own National AI Plan now describes compute and digital connectivity as critical infrastructure, recognises distributed processing as part of the digital backbone, calls for stronger domestic capability and global partnerships, and says the benefits of AI should extend across metropolitan, suburban, regional and remote communities. [3] Its Data Centre Expectations likewise seek national-security and data-sovereignty benefits, local skills, jobs and innovation from major infrastructure providers while expressly sitting outside small-scale edge and on-site enterprise data centres. [4]
+The Australian Government's own National AI Plan now describes compute and digital connectivity as critical infrastructure, recognises distributed processing as part of the digital backbone, calls for stronger domestic capability and global partnerships, and says the benefits of AI should extend across metropolitan, suburban, regional and remote communities. [\[3\]](https://www.industry.gov.au/publications/national-ai-plan/introduction) Its Data Centre Expectations likewise seek national-security and data-sovereignty benefits, local skills, jobs and innovation from major infrastructure providers while expressly sitting outside small-scale edge and on-site enterprise data centres. [\[4\]](https://www.industry.gov.au/publications/expectations-data-centres-and-ai-infrastructure-developers)
 
-There is already an important Australian technical precedent for the basic architecture I am proposing. In May 2026 CSIRO launched Vetra at its Queensland Centre for Advanced Technologies at Pullenvale. CSIRO describes Vetra as compact, modular high-performance computing placed close to robots and sensors, calls it “sovereign, trusted AI computing at the edge”, and says cloud-only approaches are not sufficient for some safety-critical and time-sensitive applications. Crucially, CSIRO describes Vetra as working with central supercomputers as an integrated edge-core-cloud system and says the model can be replicated elsewhere. [5]
+There is already an important Australian technical precedent for the basic architecture I am proposing. In May 2026 CSIRO launched Vetra at its Queensland Centre for Advanced Technologies at Pullenvale. CSIRO describes Vetra as compact, modular high-performance computing placed close to robots and sensors, calls it “sovereign, trusted AI computing at the edge”, and says cloud-only approaches are not sufficient for some safety-critical and time-sensitive applications. Crucially, CSIRO describes Vetra as working with central supercomputers as an integrated edge-core-cloud system and says the model can be replicated elsewhere. [\[5\]](https://www.csiro.au/en/news/All/News/2026/May/Vetra-AI-infrastructure)
 
 That is close to the architectural principle I am advocating, extended from a national research facility into Australian civic life:
 
@@ -74,11 +74,11 @@ The architecture should make those choices possible.
 
 The current danger is not merely that foreign technology companies are foreign. The danger is dependency without credible alternatives. A country can enthusiastically participate in the global AI economy while still asking whether its people can retain critical data locally, change suppliers, inspect important systems, continue essential functions during network disruption, develop its own models, and train enough Australians to understand the stack rather than merely consume it.
 
-Australia is already entering major collaborations with international providers. Microsoft has an Australian Government MOU covering cloud infrastructure, AI capability, safety and workforce development, while the Commonwealth has welcomed a proposed $7 billion OpenAI-NEXTDC infrastructure partnership in Western Sydney. [6] Those investments can contribute enormous capability.
+Australia is already entering major collaborations with international providers. Microsoft has an Australian Government MOU covering cloud infrastructure, AI capability, safety and workforce development, while the Commonwealth has welcomed a proposed $7 billion OpenAI-NEXTDC infrastructure partnership in Western Sydney. [\[6\]](https://www.industry.gov.au/news/australian-government-has-signed-memorandum-understanding-mou-tech-giant-microsoft) Those investments can contribute enormous capability.
 
 They should be one part of the system, not the system.
 
-CSIRO's Vetra is important precisely because it demonstrates that this need not be framed as “cloud versus edge”. CSIRO is using edge, core and cloud together. [5] That is the same balance I am proposing at national civic scale.
+CSIRO's Vetra is important precisely because it demonstrates that this need not be framed as “cloud versus edge”. CSIRO is using edge, core and cloud together. [\[5\]](https://www.csiro.au/en/news/All/News/2026/May/Vetra-AI-infrastructure) That is the same balance I am proposing at national civic scale.
 
 I therefore propose that Australia explore treating local AI capability as shared national infrastructure, in much the same conceptual family as libraries, schools, roads, telecommunications, emergency infrastructure and research facilities.
 
@@ -102,7 +102,7 @@ A citizen scientist should be able to plug a sensor network into a local digital
 
 A community should be able to understand that “AI” is not magic occurring somewhere in Virginia, California or a giant warehouse in Western Sydney. It is computers, chips, models, data, cooling, power, networks, software, mathematics, human choices and governance.
 
-Australia's National AI Plan already identifies AI capability-building through schools, TAFEs, universities, community organisations and regional communities as part of spreading AI's benefits. [7] Postcode-level infrastructure could turn that ambition into something people can see, touch, test, break, fix and learn.
+Australia's National AI Plan already identifies AI capability-building through schools, TAFEs, universities, community organisations and regional communities as part of spreading AI's benefits. [\[7\]](https://www.industry.gov.au/publications/national-ai-plan/spread-benefits) Postcode-level infrastructure could turn that ambition into something people can see, touch, test, break, fix and learn.
 
 That matters for national security as much as it matters for education.
 
@@ -120,7 +120,7 @@ We should therefore design for a future in which people can express their values
 
 This is one of the original purposes of Aura of Intelligence.
 
-The public Aura material describes a user-owned architecture in which people build their own model, own their information and choose what they share rather than surrendering data as the price of participation. [8] The Strange but True community-ledger prototype separates a relatively public local profile from a deeper private aura.md containing AI preferences, devices, wellbeing, world-building and other personal information. [9] The Aura Genesis material develops the richer version: values, preferences, life story, family memories, AI dialogue, a digital memoir, a digital-twin draft and an explicit human-consent gate, with dementia and ageing among the proposed research pathways. [10]
+The public Aura material describes a user-owned architecture in which people build their own model, own their information and choose what they share rather than surrendering data as the price of participation. [\[8\]](https://auraofintelligence.github.io/) The Strange but True community-ledger prototype separates a relatively public local profile from a deeper private aura.md containing AI preferences, devices, wellbeing, world-building and other personal information. [\[9\]](https://auraofintelligence.github.io/strange-but-true/community-ledger.html) The Aura Genesis material develops the richer version: values, preferences, life story, family memories, AI dialogue, a digital memoir, a digital-twin draft and an explicit human-consent gate, with dementia and ageing among the proposed research pathways. [\[10\]](https://p4a.xyz/pages/aura-genesis.html)
 
 This is not an assertion that a completed clinical Aura system exists today. My uploaded clinical research plan sets out a proposed pathway for dementia-care research and validation rather than evidence of an existing approved product. fileciteturn0file2
 
@@ -132,7 +132,7 @@ Instead of repeatedly clicking “I agree” beneath contracts almost nobody mea
 
 What may leave my device? Who may train on it? May my data be used for inference but not training? May a model learn from me temporarily? May derived representations be retained? May my voice be cloned? May my family see this? May researchers use this under de-identification? May it leave Australia? May it enter a commercial model? May it be shared during an emergency? What happens when I revoke a permission?
 
-That direction is not foreign to Australian privacy principles. OAIC guidance already says consent should be informed, voluntary, current and specific, should not be unnecessarily broad, should be communicated in plain English, and should be capable of being withdrawn through an easy and accessible process. Once consent is withdrawn, the previous consent cannot simply be relied on for future use or disclosure. [11]
+That direction is not foreign to Australian privacy principles. OAIC guidance already says consent should be informed, voluntary, current and specific, should not be unnecessarily broad, should be communicated in plain English, and should be capable of being withdrawn through an easy and accessible process. Once consent is withdrawn, the previous consent cannot simply be relied on for future use or disclosure. [\[11\]](https://www.oaic.gov.au/privacy/your-privacy-rights/your-personal-information/consent-to-the-handling-of-personal-information)
 
 The technical and policy opportunity is to make those principles operational at AI speed.
 
@@ -140,7 +140,7 @@ Revocation also needs a more sophisticated conception than “delete my entire d
 
 The values question sits above this permissions system.
 
-The Prime Minister has said Australia's forthcoming AI Standards will use “our values as the benchmark”. [2] That raises a beautiful democratic question:
+The Prime Minister has said Australia's forthcoming AI Standards will use “our values as the benchmark”. [\[2\]](https://www.pm.gov.au/media/ai-australias-interests) That raises a beautiful democratic question:
 
 What are our values?
 
@@ -182,11 +182,11 @@ First Nations sovereignty should not be represented as one subordinate rung bene
 
 It intersects every layer.
 
-The Commonwealth's own Framework for Governance of Indigenous Data places Aboriginal and Torres Strait Islander peoples at the centre of data governance, seeks greater agency over government-held Indigenous data across the data lifecycle, and requires agencies to develop implementation plans around partnership, data capability, knowledge of data assets and inclusive data systems. [12]
+The Commonwealth's own Framework for Governance of Indigenous Data places Aboriginal and Torres Strait Islander peoples at the centre of data governance, seeks greater agency over government-held Indigenous data across the data lifecycle, and requires agencies to develop implementation plans around partnership, data capability, knowledge of data assets and inclusive data systems. [\[12\]](https://www.niaa.gov.au/news-and-media/framework-governance-indigenous-data)
 
-This is already moving beyond abstract principle. Closing the Gap Priority Reform Four is supporting community data projects intended to strengthen local Indigenous data ecosystems, and NIAA's 2026 AI transparency statement expressly says its AI use should strengthen community control and protect cultural rights through Indigenous Data Sovereignty. [13]
+This is already moving beyond abstract principle. Closing the Gap Priority Reform Four is supporting community data projects intended to strengthen local Indigenous data ecosystems, and NIAA's 2026 AI transparency statement expressly says its AI use should strengthen community control and protect cultural rights through Indigenous Data Sovereignty. [\[13\]](https://www.niaa.gov.au/our-work/evaluations-and-evidence/indigenous-advancement-strategy-ias-evaluation-work-plan/priority-reform-four-community-data)
 
-AIATSIS's Yumi Sabe platform similarly supports nation-specific data and Indigenous nation-building, is based around Indigenous Data Governance, Indigenous Data Sovereignty and Indigenous Cultural and Intellectual Property, and says material is to be shared where appropriate permissions have been granted by relevant copyright and ICIP holders. [14] NIAA is now separately researching how ICIP clauses could enact Indigenous data sovereignty in Commonwealth procurement and grants. [15]
+AIATSIS's Yumi Sabe platform similarly supports nation-specific data and Indigenous nation-building, is based around Indigenous Data Governance, Indigenous Data Sovereignty and Indigenous Cultural and Intellectual Property, and says material is to be shared where appropriate permissions have been granted by relevant copyright and ICIP holders. [\[14\]](https://yumi-sabe.aiatsis.gov.au/about) NIAA is now separately researching how ICIP clauses could enact Indigenous data sovereignty in Commonwealth procurement and grants. [\[15\]](https://www.niaa.gov.au/our-work/evaluations-and-evidence/indigenous-advancement-strategy-ias-evaluation-work-plan/indigenous-cultural-and-intellectual)
 
 I propose taking that logic much further technically.
 
@@ -212,7 +212,7 @@ Special data warrants special permissions.
 
 The same choose-your-own-permissions concept operating at the individual Aura layer can therefore scale into collective sovereignty. A nation, organisation, family or custodian group can have permissions just as a person can.
 
-Federated learning is useful here, but should not be treated as a magic privacy word. NIST's privacy research notes that federated learning can still expose information through model updates or trained models; techniques such as secure aggregation and differential privacy can provide additional protections. [16] Model-extraction research has also demonstrated that query access to machine-learning systems can sometimes be used to reproduce important aspects of a model's functionality. [17]
+Federated learning is useful here, but should not be treated as a magic privacy word. NIST's privacy research notes that federated learning can still expose information through model updates or trained models; techniques such as secure aggregation and differential privacy can provide additional protections. [\[16\]](https://www.nist.gov/blogs/cybersecurity-insights/privacy-attacks-federated-learning) Model-extraction research has also demonstrated that query access to machine-learning systems can sometimes be used to reproduce important aspects of a model's functionality. [\[17\]](https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/tramer)
 
 A Quandamooka sovereignty layer could therefore make federated access permissioned and metered: authenticated users, purpose-limited credentials, rate limits, query budgets, logging, provenance, secure aggregation, privacy-preserving training techniques, anomaly detection and enforceable conditions on derived models. The design objective would be to make unauthorised extraction or distillation substantially harder, detectable where possible, and clearly outside the terms under which access was granted.
 
@@ -244,7 +244,7 @@ Ready SET Co. is intended to make the capability-building function as important 
 
 The pilot proposition would be to explore installing one first-class contemporary AI rack, or an equivalent modular cluster, with NVIDIA GB200/GB300-class and AMD rack-scale systems serving as examples of the level of capability rather than a locked procurement specification.
 
-Modern rack-scale AI systems are serious infrastructure. NVIDIA's GB200 NVL72 combines 72 Blackwell GPUs and 36 Grace CPUs in a liquid-cooled rack-scale system; GB300 NVL72 reference designs similarly integrate 72 Blackwell Ultra GPUs, and full-rack engineering involves substantial power, cooling and networking requirements. [18] AMD is developing competing rack-scale systems through its Instinct and Helios architecture, giving Australia every reason to preserve vendor choice rather than hard-code one supplier into policy. [19]
+Modern rack-scale AI systems are serious infrastructure. NVIDIA's GB200 NVL72 combines 72 Blackwell GPUs and 36 Grace CPUs in a liquid-cooled rack-scale system; GB300 NVL72 reference designs similarly integrate 72 Blackwell Ultra GPUs, and full-rack engineering involves substantial power, cooling and networking requirements. [\[18\]](https://www.nvidia.com/en-in/data-center/gb200-nvl72/) AMD is developing competing rack-scale systems through its Instinct and Helios architecture, giving Australia every reason to preserve vendor choice rather than hard-code one supplier into policy. [\[19\]](https://www.amd.com/en/products/accelerators/instinct/mi400/mi455x.html)
 
 Accordingly, “a rack in the community” should not be interpreted as parking a 100-plus-kilowatt liquid-cooled system beside the photocopier.
 
@@ -272,7 +272,7 @@ Some rewards could be monetary. Some could be credentials, access to equipment, 
 
 My broader health-cooperative work also explores future health and wellbeing access as a potential cooperative benefit, including heat and pressure/oxygen interventions. Those proposals require their own clinical, safety and regulatory research and should not be mistaken here for proven entitlements or an operating health service. The uploaded Aura clinical pathway expressly treats health and dementia work as a staged research and governance problem. fileciteturn0file2
 
-Brisbane 2032 offers an obvious mobilisation horizon. The Games' own current vision emphasises community participation and long-term benefits beyond the event itself. [20] I would like to explore whether the eventual Olympic and Paralympic volunteer mobilisation could leave behind something more permanent: a civic space-stewardship and resilience network whose skills, credentials and relationships remain useful after the closing ceremony.
+Brisbane 2032 offers an obvious mobilisation horizon. The Games' own current vision emphasises community participation and long-term benefits beyond the event itself. [\[20\]](https://newsroom.olympics.com/record/1679) I would like to explore whether the eventual Olympic and Paralympic volunteer mobilisation could leave behind something more permanent: a civic space-stewardship and resilience network whose skills, credentials and relationships remain useful after the closing ceremony.
 
 That is the sense in which a postcode rack is more than a box of GPUs.
 
@@ -296,7 +296,7 @@ At the Oceania level, it means neighbouring countries and peoples should be capa
 
 Globally, it means the architecture is open enough to communicate with everyone.
 
-The National AI Plan itself combines domestic capability with international partnerships and specifically treats regional, First Nations and international engagement as parts of Australia's AI future. [21]
+The National AI Plan itself combines domestic capability with international partnerships and specifically treats regional, First Nations and international engagement as parts of Australia's AI future. [\[21\]](https://www.industry.gov.au/publications/national-ai-plan/keep-australians-safe)
 
 I would like Australia to help develop a federation where models can visit data more often than data has to visit models.
 
@@ -344,7 +344,7 @@ I am not suggesting all hazards are equally probable. I am suggesting that simul
 
 This is precisely where decentralised compute earns its keep.
 
-The technology horizon is also moving beyond terrestrial data centres faster than public policy documents written only a few years ago anticipated. SpaceX now publicly describes Starmind, a planned space-based AI-compute system, and has stated ambitions for thousands of AI satellites beginning as soon as late 2027 and eventually gigawatt-scale AI compute in orbit. Those are company plans rather than guaranteed outcomes, but they make the broader point clear: orbital compute is no longer purely a science-fiction architecture. [22] Starlink's next-generation V3 architecture is itself designed around very high-capacity communications and optical inter-satellite links. [23]
+The technology horizon is also moving beyond terrestrial data centres faster than public policy documents written only a few years ago anticipated. SpaceX now publicly describes Starmind, a planned space-based AI-compute system, and has stated ambitions for thousands of AI satellites beginning as soon as late 2027 and eventually gigawatt-scale AI compute in orbit. Those are company plans rather than guaranteed outcomes, but they make the broader point clear: orbital compute is no longer purely a science-fiction architecture. [\[22\]](https://www.spacex.com/spacexai/starmind) Starlink's next-generation V3 architecture is itself designed around very high-capacity communications and optical inter-satellite links. [\[23\]](https://starlink.com/updates/starlink-version-3-satellites)
 
 Australian sovereign architecture should therefore be adaptive rather than frozen around the market topology of 2026.
 
@@ -384,7 +384,7 @@ Using the 41,549 places meeting the population threshold in the supplied dataset
 
 Those figures are not a procurement quote. They are a scale thought experiment.
 
-For context, the Australian Parliamentary Library records public estimates of approximately A$268-368 billion for Australia's nuclear-powered submarine program under AUKUS over its life, with the Parliamentary Budget Office producing an out-turned estimate of about A$367.6 billion including contingency. [24]
+For context, the Australian Parliamentary Library records public estimates of approximately A$268-368 billion for Australia's nuclear-powered submarine program under AUKUS over its life, with the Parliamentary Budget Office producing an out-turned estimate of about A$367.6 billion including contingency. [\[24\]](https://www.aph.gov.au/About_Parliament/Parliamentary_departments/Parliamentary_Library/Research/Research_Papers/2024-25/The_deterrence_advantage_of_nuclear_powered_submarines)
 
 I know these are not like-for-like programs.
 
@@ -425,7 +425,7 @@ That is a legitimate thing for a citizen to ask their government to consider.
 I ask the Committee to consider the following as an integrated package rather than a collection of unrelated technology projects.
 
 Recommendation - Adopt a balanced national compute doctrine.
-Australian AI policy should explicitly plan for a mixture of hyperscale data centres, Commonwealth and research supercomputing, state capability, postcode-level community compute, neighbourhood edge systems and self-sovereign personal AI. CSIRO's Vetra provides an Australian demonstration that edge and core/cloud infrastructure can be complementary parts of sovereign capability. [5]
+Australian AI policy should explicitly plan for a mixture of hyperscale data centres, Commonwealth and research supercomputing, state capability, postcode-level community compute, neighbourhood edge systems and self-sovereign personal AI. CSIRO's Vetra provides an Australian demonstration that edge and core/cloud infrastructure can be complementary parts of sovereign capability. [\[5\]](https://www.csiro.au/en/news/All/News/2026/May/Vetra-AI-infrastructure)
 
 Recommendation - Establish a Postcode Sovereign AI Pilot Program.
 The Commonwealth could fund a small number of deliberately different demonstration communities: metropolitan, suburban, regional, remote, island, disaster-prone and First Nations-governed contexts. The question should be what becomes possible when serious compute, knowledge and community access are brought together-not whether every site should be identical.
@@ -440,28 +440,28 @@ Recommendation - Create an Australian Open Model Commons.
 Australia should set a long-term objective of Australian-designed, Australian-trained, Australian-deployed and genuinely open-source foundation models, supported by open evaluation and deployment tooling and capable of running across personal, postcode, state and national infrastructure. Restricted data can remain restricted. Open models and sovereign data are compatible concepts.
 
 Recommendation - Remain interoperable with the best global systems while Australian capability grows.
-Open-source, open-weight and closed frontier models should all remain available where appropriate. Existing international partnerships can bring useful investment and knowledge, but procurement and standards should preserve switching, portability and local alternatives rather than creating permanent lock-in. Australia's current Microsoft collaboration and the OpenAI-NEXTDC proposal show how substantial the international investment layer is becoming. [6]
+Open-source, open-weight and closed frontier models should all remain available where appropriate. Existing international partnerships can bring useful investment and knowledge, but procurement and standards should preserve switching, portability and local alternatives rather than creating permanent lock-in. Australia's current Microsoft collaboration and the OpenAI-NEXTDC proposal show how substantial the international investment layer is becoming. [\[6\]](https://www.industry.gov.au/news/australian-government-has-signed-memorandum-understanding-mou-tech-giant-microsoft)
 
 Recommendation - Develop a personal AI sovereignty and permissions standard.
-Australians should be able to maintain portable, intelligible and machine-readable preferences governing AI training, inference, retention, sharing, commercial use, overseas transfer, emergency access and revocation. The standard should build on the existing Australian principle that consent is informed, voluntary, current, specific and withdrawable. [11] Aura of Intelligence is my proposed implementation and experimentation environment for this concept, ranging from simple personal applications through to richer live digital twins and dementia/ageing research pathways. [25]
+Australians should be able to maintain portable, intelligible and machine-readable preferences governing AI training, inference, retention, sharing, commercial use, overseas transfer, emergency access and revocation. The standard should build on the existing Australian principle that consent is informed, voluntary, current, specific and withdrawable. [\[11\]](https://www.oaic.gov.au/privacy/your-privacy-rights/your-personal-information/consent-to-the-handling-of-personal-information) Aura of Intelligence is my proposed implementation and experimentation environment for this concept, ranging from simple personal applications through to richer live digital twins and dementia/ageing research pathways. [\[25\]](https://auraofintelligence.github.io/)
 
 Recommendation - Periodically ask Australians what Australian values actually mean.
-If Australian values are to benchmark national AI standards, government and civil society should consider recurring surveys and deliberative exercises in which people identify important values and virtues of the past, present and future and explain their reasoning. [2] Aggregate social expectations should inform AI governance without erasing individual values or minority cultures.
+If Australian values are to benchmark national AI standards, government and civil society should consider recurring surveys and deliberative exercises in which people identify important values and virtues of the past, present and future and explain their reasoning. [\[2\]](https://www.pm.gov.au/media/ai-australias-interests) Aggregate social expectations should inform AI governance without erasing individual values or minority cultures.
 
 Recommendation - Establish a First Nations AI and data-sovereignty pathway.
-Commonwealth AI policy should support First Nations that wish to build their own sovereign models and Digital Twins of Country, with governance authority spanning data, models, training, inference and derived outputs. This would build on the Commonwealth's existing Indigenous Data Sovereignty framework rather than starting from zero. [26]
+Commonwealth AI policy should support First Nations that wish to build their own sovereign models and Digital Twins of Country, with governance authority spanning data, models, training, inference and derived outputs. This would build on the Commonwealth's existing Indigenous Data Sovereignty framework rather than starting from zero. [\[26\]](https://www.niaa.gov.au/artificial-intelligence-ai-transparency-statement)
 
 Recommendation - Support permissioned and metered federated learning for culturally or otherwise sensitive data.
-Pilot architectures should investigate credentials, purpose-bound access, query budgets, secure aggregation, privacy-preserving learning, logging, revocation, provenance and defences against model-extraction and distillation attacks. Federated learning should be treated as one tool in a broader sovereignty system, not as a synonym for privacy. [27]
+Pilot architectures should investigate credentials, purpose-bound access, query budgets, secure aggregation, privacy-preserving learning, logging, revocation, provenance and defences against model-extraction and distillation attacks. Federated learning should be treated as one tool in a broader sovereignty system, not as a synonym for privacy. [\[27\]](https://www.nist.gov/blogs/cybersecurity-insights/privacy-attacks-federated-learning)
 
 Recommendation - Make knowledge transfer an obligation attached to major AI infrastructure.
-Australia should ask more of hyperscale investment than electricity consumption and construction jobs. Community capability, startup access, researcher access, local engineering, apprenticeships, curriculum, model knowledge and opportunities for Australian organisations to build on the infrastructure should form part of its social licence. This direction is already compatible with the Commonwealth's Data Centre Expectations. [4]
+Australia should ask more of hyperscale investment than electricity consumption and construction jobs. Community capability, startup access, researcher access, local engineering, apprenticeships, curriculum, model knowledge and opportunities for Australian organisations to build on the infrastructure should form part of its social licence. This direction is already compatible with the Commonwealth's Data Centre Expectations. [\[4\]](https://www.industry.gov.au/publications/expectations-data-centres-and-ai-infrastructure-developers)
 
 Recommendation - Build offline and degraded-mode AI into national resilience planning.
 Important local functions should be capable of continuing when cloud links, telecommunications or other central services are disrupted. Disaster kiosks, cached models, local maps, community resource data, sensor networks and postcode compute should be tested through real exercises rather than merely described in resilience documents. My existing L0-L3 specifications already treat offline-first operation as a design principle.
 
 Recommendation - Use Brisbane 2032 as a capability deadline rather than merely an event deadline.
-Queensland and the Commonwealth could use the remaining preparation period to train young people, developers, volunteers and communities in AI, simulation, digital twins and civic technologies, with the aim of leaving behind permanent local capability after the Games. Brisbane 2032's present vision already emphasises enduring community benefit. [20]
+Queensland and the Commonwealth could use the remaining preparation period to train young people, developers, volunteers and communities in AI, simulation, digital twins and civic technologies, with the aim of leaving behind permanent local capability after the Games. Brisbane 2032's present vision already emphasises enduring community benefit. [\[20\]](https://newsroom.olympics.com/record/1679)
 
 Recommendation - Develop an Oceania sovereign-compute federation.
 Australia should invite Pacific partners to co-design interoperable systems in which participating countries and communities retain custody of sensitive data and choose what models, queries, credentials and derived information cross borders. Australia should offer collaboration, not simply replace foreign digital extraction with Australian digital extraction.
@@ -470,10 +470,10 @@ Recommendation - Build an open provenance layer for science and civic simulation
 Digital twins should distinguish observation, established scientific model, inference, disputed interpretation, speculation and imaginative scenario. Sources, assumptions, versions and uncertainty should travel with claims. The Web3 Sensorium concept I have supplied is an exploratory architecture for this kind of open scientific knowledge space. fileciteturn0file6
 
 Recommendation - Keep the architecture adaptive to terrestrial and orbital technological change.
-Government should periodically reconsider where compute belongs as chips, robotics, networks, energy systems and space infrastructure evolve. SpaceX's current Starmind plans are one contemporary signal that assumptions about the physical location of large-scale compute may change substantially during the lifetime of infrastructure being approved today. [22]
+Government should periodically reconsider where compute belongs as chips, robotics, networks, energy systems and space infrastructure evolve. SpaceX's current Starmind plans are one contemporary signal that assumptions about the physical location of large-scale compute may change substantially during the lifetime of infrastructure being approved today. [\[22\]](https://www.spacex.com/spacexai/starmind)
 
 Recommendation - Run the global-town thought experiment seriously.
-Australia should explore with international partners what a global network of locally sovereign civic AI nodes might contribute to scientific cooperation, education, resilience and peace. My rough A$249-264 billion thought experiment is deliberately provocative: it places the potential cost of a global positive-sum intelligence commons in the same broad order of magnitude as one major Australian strategic-defence program. The comparison is not an accounting equivalence; it is an invitation to broaden what we are willing to imagine as national and planetary security infrastructure. [24]
+Australia should explore with international partners what a global network of locally sovereign civic AI nodes might contribute to scientific cooperation, education, resilience and peace. My rough A$249-264 billion thought experiment is deliberately provocative: it places the potential cost of a global positive-sum intelligence commons in the same broad order of magnitude as one major Australian strategic-defence program. The comparison is not an accounting equivalence; it is an invitation to broaden what we are willing to imagine as national and planetary security infrastructure. [\[24\]](https://www.aph.gov.au/About_Parliament/Parliamentary_departments/Parliamentary_Library/Research/Research_Papers/2024-25/The_deterrence_advantage_of_nuclear_powered_submarines)
 
 The choice before Australia is therefore not centralised AI or decentralised AI.
 
@@ -523,100 +523,100 @@ then I reckon that is a blooming good use of a supercomputer.
 
 [1] https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Environment_and_Communications/AIdatacentres48P
 
-https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Environment_and_Communications/AIdatacentres48P
+[https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Environment_and_Communications/AIdatacentres48P](https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Environment_and_Communications/AIdatacentres48P)
 
-[2] https://www.pm.gov.au/media/ai-australias-interests
+[\[2\]](https://www.pm.gov.au/media/ai-australias-interests) https://www.pm.gov.au/media/ai-australias-interests
 
-https://www.pm.gov.au/media/ai-australias-interests
+[https://www.pm.gov.au/media/ai-australias-interests](https://www.pm.gov.au/media/ai-australias-interests)
 
-[3] https://www.industry.gov.au/publications/national-ai-plan/introduction
+[\[3\]](https://www.industry.gov.au/publications/national-ai-plan/introduction) https://www.industry.gov.au/publications/national-ai-plan/introduction
 
-https://www.industry.gov.au/publications/national-ai-plan/introduction
+[https://www.industry.gov.au/publications/national-ai-plan/introduction](https://www.industry.gov.au/publications/national-ai-plan/introduction)
 
-[4] https://www.industry.gov.au/publications/expectations-data-centres-and-ai-infrastructure-developers
+[\[4\]](https://www.industry.gov.au/publications/expectations-data-centres-and-ai-infrastructure-developers) https://www.industry.gov.au/publications/expectations-data-centres-and-ai-infrastructure-developers
 
-https://www.industry.gov.au/publications/expectations-data-centres-and-ai-infrastructure-developers
+[https://www.industry.gov.au/publications/expectations-data-centres-and-ai-infrastructure-developers](https://www.industry.gov.au/publications/expectations-data-centres-and-ai-infrastructure-developers)
 
-[5] https://www.csiro.au/en/news/All/News/2026/May/Vetra-AI-infrastructure
+[\[5\]](https://www.csiro.au/en/news/All/News/2026/May/Vetra-AI-infrastructure) https://www.csiro.au/en/news/All/News/2026/May/Vetra-AI-infrastructure
 
-https://www.csiro.au/en/news/All/News/2026/May/Vetra-AI-infrastructure
+[https://www.csiro.au/en/news/All/News/2026/May/Vetra-AI-infrastructure](https://www.csiro.au/en/news/All/News/2026/May/Vetra-AI-infrastructure)
 
-[6] https://www.industry.gov.au/news/australian-government-has-signed-memorandum-understanding-mou-tech-giant-microsoft
+[\[6\]](https://www.industry.gov.au/news/australian-government-has-signed-memorandum-understanding-mou-tech-giant-microsoft) https://www.industry.gov.au/news/australian-government-has-signed-memorandum-understanding-mou-tech-giant-microsoft
 
-https://www.industry.gov.au/news/australian-government-has-signed-memorandum-understanding-mou-tech-giant-microsoft
+[https://www.industry.gov.au/news/australian-government-has-signed-memorandum-understanding-mou-tech-giant-microsoft](https://www.industry.gov.au/news/australian-government-has-signed-memorandum-understanding-mou-tech-giant-microsoft)
 
-[7] https://www.industry.gov.au/publications/national-ai-plan/spread-benefits
+[\[7\]](https://www.industry.gov.au/publications/national-ai-plan/spread-benefits) https://www.industry.gov.au/publications/national-ai-plan/spread-benefits
 
-https://www.industry.gov.au/publications/national-ai-plan/spread-benefits
+[https://www.industry.gov.au/publications/national-ai-plan/spread-benefits](https://www.industry.gov.au/publications/national-ai-plan/spread-benefits)
 
-[8] [25] https://auraofintelligence.github.io/
+[\[8\]](https://auraofintelligence.github.io/) [\[25\]](https://auraofintelligence.github.io/) https://auraofintelligence.github.io/
 
-https://auraofintelligence.github.io/
+[https://auraofintelligence.github.io/](https://auraofintelligence.github.io/)
 
-[9] https://auraofintelligence.github.io/strange-but-true/community-ledger.html
+[\[9\]](https://auraofintelligence.github.io/strange-but-true/community-ledger.html) https://auraofintelligence.github.io/strange-but-true/community-ledger.html
 
-https://auraofintelligence.github.io/strange-but-true/community-ledger.html
+[https://auraofintelligence.github.io/strange-but-true/community-ledger.html](https://auraofintelligence.github.io/strange-but-true/community-ledger.html)
 
-[10] https://p4a.xyz/pages/aura-genesis.html
+[\[10\]](https://p4a.xyz/pages/aura-genesis.html) https://p4a.xyz/pages/aura-genesis.html
 
-https://p4a.xyz/pages/aura-genesis.html
+[https://p4a.xyz/pages/aura-genesis.html](https://p4a.xyz/pages/aura-genesis.html)
 
-[11] https://www.oaic.gov.au/privacy/your-privacy-rights/your-personal-information/consent-to-the-handling-of-personal-information
+[\[11\]](https://www.oaic.gov.au/privacy/your-privacy-rights/your-personal-information/consent-to-the-handling-of-personal-information) https://www.oaic.gov.au/privacy/your-privacy-rights/your-personal-information/consent-to-the-handling-of-personal-information
 
-https://www.oaic.gov.au/privacy/your-privacy-rights/your-personal-information/consent-to-the-handling-of-personal-information
+[https://www.oaic.gov.au/privacy/your-privacy-rights/your-personal-information/consent-to-the-handling-of-personal-information](https://www.oaic.gov.au/privacy/your-privacy-rights/your-personal-information/consent-to-the-handling-of-personal-information)
 
-[12] https://www.niaa.gov.au/news-and-media/framework-governance-indigenous-data
+[\[12\]](https://www.niaa.gov.au/news-and-media/framework-governance-indigenous-data) https://www.niaa.gov.au/news-and-media/framework-governance-indigenous-data
 
-https://www.niaa.gov.au/news-and-media/framework-governance-indigenous-data
+[https://www.niaa.gov.au/news-and-media/framework-governance-indigenous-data](https://www.niaa.gov.au/news-and-media/framework-governance-indigenous-data)
 
-[13] https://www.niaa.gov.au/our-work/evaluations-and-evidence/indigenous-advancement-strategy-ias-evaluation-work-plan/priority-reform-four-community-data
+[\[13\]](https://www.niaa.gov.au/our-work/evaluations-and-evidence/indigenous-advancement-strategy-ias-evaluation-work-plan/priority-reform-four-community-data) https://www.niaa.gov.au/our-work/evaluations-and-evidence/indigenous-advancement-strategy-ias-evaluation-work-plan/priority-reform-four-community-data
 
-https://www.niaa.gov.au/our-work/evaluations-and-evidence/indigenous-advancement-strategy-ias-evaluation-work-plan/priority-reform-four-community-data
+[https://www.niaa.gov.au/our-work/evaluations-and-evidence/indigenous-advancement-strategy-ias-evaluation-work-plan/priority-reform-four-community-data](https://www.niaa.gov.au/our-work/evaluations-and-evidence/indigenous-advancement-strategy-ias-evaluation-work-plan/priority-reform-four-community-data)
 
-[14] https://yumi-sabe.aiatsis.gov.au/about
+[\[14\]](https://yumi-sabe.aiatsis.gov.au/about) https://yumi-sabe.aiatsis.gov.au/about
 
-https://yumi-sabe.aiatsis.gov.au/about
+[https://yumi-sabe.aiatsis.gov.au/about](https://yumi-sabe.aiatsis.gov.au/about)
 
-[15] https://www.niaa.gov.au/our-work/evaluations-and-evidence/indigenous-advancement-strategy-ias-evaluation-work-plan/indigenous-cultural-and-intellectual
+[\[15\]](https://www.niaa.gov.au/our-work/evaluations-and-evidence/indigenous-advancement-strategy-ias-evaluation-work-plan/indigenous-cultural-and-intellectual) https://www.niaa.gov.au/our-work/evaluations-and-evidence/indigenous-advancement-strategy-ias-evaluation-work-plan/indigenous-cultural-and-intellectual
 
-https://www.niaa.gov.au/our-work/evaluations-and-evidence/indigenous-advancement-strategy-ias-evaluation-work-plan/indigenous-cultural-and-intellectual
+[https://www.niaa.gov.au/our-work/evaluations-and-evidence/indigenous-advancement-strategy-ias-evaluation-work-plan/indigenous-cultural-and-intellectual](https://www.niaa.gov.au/our-work/evaluations-and-evidence/indigenous-advancement-strategy-ias-evaluation-work-plan/indigenous-cultural-and-intellectual)
 
-[16] [27] https://www.nist.gov/blogs/cybersecurity-insights/privacy-attacks-federated-learning
+[\[16\]](https://www.nist.gov/blogs/cybersecurity-insights/privacy-attacks-federated-learning) [\[27\]](https://www.nist.gov/blogs/cybersecurity-insights/privacy-attacks-federated-learning) https://www.nist.gov/blogs/cybersecurity-insights/privacy-attacks-federated-learning
 
-https://www.nist.gov/blogs/cybersecurity-insights/privacy-attacks-federated-learning
+[https://www.nist.gov/blogs/cybersecurity-insights/privacy-attacks-federated-learning](https://www.nist.gov/blogs/cybersecurity-insights/privacy-attacks-federated-learning)
 
-[17] https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/tramer
+[\[17\]](https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/tramer) https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/tramer
 
-https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/tramer
+[https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/tramer](https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/tramer)
 
-[18] https://www.nvidia.com/en-in/data-center/gb200-nvl72/
+[\[18\]](https://www.nvidia.com/en-in/data-center/gb200-nvl72/) https://www.nvidia.com/en-in/data-center/gb200-nvl72/
 
-https://www.nvidia.com/en-in/data-center/gb200-nvl72/
+[https://www.nvidia.com/en-in/data-center/gb200-nvl72/](https://www.nvidia.com/en-in/data-center/gb200-nvl72/)
 
-[19] https://www.amd.com/en/products/accelerators/instinct/mi400/mi455x.html
+[\[19\]](https://www.amd.com/en/products/accelerators/instinct/mi400/mi455x.html) https://www.amd.com/en/products/accelerators/instinct/mi400/mi455x.html
 
-https://www.amd.com/en/products/accelerators/instinct/mi400/mi455x.html
+[https://www.amd.com/en/products/accelerators/instinct/mi400/mi455x.html](https://www.amd.com/en/products/accelerators/instinct/mi400/mi455x.html)
 
-[20] https://newsroom.olympics.com/record/1679
+[\[20\]](https://newsroom.olympics.com/record/1679) https://newsroom.olympics.com/record/1679
 
-https://newsroom.olympics.com/record/1679
+[https://newsroom.olympics.com/record/1679](https://newsroom.olympics.com/record/1679)
 
-[21] https://www.industry.gov.au/publications/national-ai-plan/keep-australians-safe
+[\[21\]](https://www.industry.gov.au/publications/national-ai-plan/keep-australians-safe) https://www.industry.gov.au/publications/national-ai-plan/keep-australians-safe
 
-https://www.industry.gov.au/publications/national-ai-plan/keep-australians-safe
+[https://www.industry.gov.au/publications/national-ai-plan/keep-australians-safe](https://www.industry.gov.au/publications/national-ai-plan/keep-australians-safe)
 
-[22] https://www.spacex.com/spacexai/starmind
+[\[22\]](https://www.spacex.com/spacexai/starmind) https://www.spacex.com/spacexai/starmind
 
-https://www.spacex.com/spacexai/starmind
+[https://www.spacex.com/spacexai/starmind](https://www.spacex.com/spacexai/starmind)
 
-[23] https://starlink.com/updates/starlink-version-3-satellites
+[\[23\]](https://starlink.com/updates/starlink-version-3-satellites) https://starlink.com/updates/starlink-version-3-satellites
 
-https://starlink.com/updates/starlink-version-3-satellites
+[https://starlink.com/updates/starlink-version-3-satellites](https://starlink.com/updates/starlink-version-3-satellites)
 
-[24] https://www.aph.gov.au/About_Parliament/Parliamentary_departments/Parliamentary_Library/Research/Research_Papers/2024-25/The_deterrence_advantage_of_nuclear_powered_submarines
+[\[24\]](https://www.aph.gov.au/About_Parliament/Parliamentary_departments/Parliamentary_Library/Research/Research_Papers/2024-25/The_deterrence_advantage_of_nuclear_powered_submarines) https://www.aph.gov.au/About_Parliament/Parliamentary_departments/Parliamentary_Library/Research/Research_Papers/2024-25/The_deterrence_advantage_of_nuclear_powered_submarines
 
-https://www.aph.gov.au/About_Parliament/Parliamentary_departments/Parliamentary_Library/Research/Research_Papers/2024-25/The_deterrence_advantage_of_nuclear_powered_submarines
+[https://www.aph.gov.au/About_Parliament/Parliamentary_departments/Parliamentary_Library/Research/Research_Papers/2024-25/The_deterrence_advantage_of_nuclear_powered_submarines](https://www.aph.gov.au/About_Parliament/Parliamentary_departments/Parliamentary_Library/Research/Research_Papers/2024-25/The_deterrence_advantage_of_nuclear_powered_submarines)
 
-[26] https://www.niaa.gov.au/artificial-intelligence-ai-transparency-statement
+[\[26\]](https://www.niaa.gov.au/artificial-intelligence-ai-transparency-statement) https://www.niaa.gov.au/artificial-intelligence-ai-transparency-statement
 
-https://www.niaa.gov.au/artificial-intelligence-ai-transparency-statement
+[https://www.niaa.gov.au/artificial-intelligence-ai-transparency-statement](https://www.niaa.gov.au/artificial-intelligence-ai-transparency-statement)

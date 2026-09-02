@@ -8,6 +8,7 @@ from pathlib import Path
 
 from docx import Document
 from docx.table import Table
+from docx.text.hyperlink import Hyperlink
 from docx.text.paragraph import Paragraph
 from docx.oxml.table import CT_Tbl
 from docx.oxml.text.paragraph import CT_P
@@ -19,8 +20,19 @@ def clean(value: str) -> str:
     return value.strip()
 
 
+def inline_markdown(paragraph: Paragraph) -> str:
+    parts = []
+    for item in paragraph.iter_inner_content():
+        if isinstance(item, Hyperlink):
+            label = clean(item.text).replace("[", "\\[").replace("]", "\\]")
+            parts.append(f"[{label}]({item.url})" if item.url and label else label)
+        else:
+            parts.append(item.text)
+    return clean("".join(parts))
+
+
 def paragraph_markdown(paragraph: Paragraph) -> str:
-    text = clean(paragraph.text)
+    text = inline_markdown(paragraph)
     if not text:
         return ""
     style = (paragraph.style.name if paragraph.style else "").lower()
@@ -48,7 +60,10 @@ def paragraph_markdown(paragraph: Paragraph) -> str:
 def table_markdown(table: Table) -> str:
     rows = []
     for row in table.rows:
-        cells = [clean(cell.text).replace("|", "\\|").replace("\n", "<br>") for cell in row.cells]
+        cells = []
+        for cell in row.cells:
+            value = "<br>".join(inline_markdown(paragraph) for paragraph in cell.paragraphs if inline_markdown(paragraph))
+            cells.append(value.replace("|", "\\|"))
         rows.append(cells)
     if not rows:
         return ""
