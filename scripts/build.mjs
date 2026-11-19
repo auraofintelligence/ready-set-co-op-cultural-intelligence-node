@@ -3,6 +3,7 @@ import path from 'node:path';
 
 const root = process.cwd();
 const baseUrl = 'https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/';
+const participationUrl = 'https://ready-setco.auraofintelligence.workers.dev/join.html';
 
 const routes = [
   { file: 'index.html', label: 'Home', short: 'Home' },
@@ -216,7 +217,8 @@ const pages = {
     lede: 'A working exploration of local compute on Minjerribah: useful every day, shaped through Indigenous and non-Indigenous relationships, and connected beyond the island only on locally chosen terms.',
     actions: [
       ['Enter the idea', '#starting-point'],
-      ['Follow the repeatable plan', 'process.html']
+      ['Follow the repeatable plan', 'process.html'],
+      ['Ready SETCO sign-on', participationUrl, true]
     ],
     body: `
       <section class="section section-light" id="starting-point">
@@ -232,6 +234,8 @@ const pages = {
           </div>
         </div>
       </section>
+
+      ${participationSection()}
 
       <section class="section section-ink">
         <div class="wrap reveal">
@@ -617,9 +621,11 @@ const pages = {
     theme: 'orange',
     heading: 'Shared work around shared equipment.',
     lede: 'Ready Sustainable Employment and Training describes a cooperative layer around the node: practical pathways into paid work, learning, equipment access and locally useful services.',
-    actions: [['See possible roles', '#roles'], ['Explore the network', 'network.html']],
+    actions: [['Ready SETCO sign-on', participationUrl, true], ['See possible roles', '#roles'], ['Explore the network', 'network.html']],
     body: `
       <section class="section section-light"><div class="wrap intro-grid reveal"><div><h2>The co-op keeps useful work moving.</h2><p class="lead">A cooperative layer holds equipment, coordinates services, creates paid pathways and supports learning. Cultural decisions stay with the people and relationships connected to each project.</p></div><div class="concept-panel"><p><strong>Equipment layer</strong><br>Access, booking, maintenance, insurance and lifecycle planning.</p><p><strong>Work layer</strong><br>Paid projects, technical services, creative production and local operations.</p><p><strong>Learning layer</strong><br>Supported practice, mentoring, credentials where useful and peer exchange.</p></div></div></section>
+
+      ${participationSection()}
 
       <section class="section section-ink" id="roles"><div class="wrap reveal"><h2>Possible roles around one node</h2><div class="role-wheel" data-role-wheel><button type="button" data-role="operator">Node operations</button><button type="button" data-role="media">Media production</button><button type="button" data-role="data">Data stewardship</button><button type="button" data-role="culture">Cultural review</button><button type="button" data-role="learning">Learning support</button><button type="button" data-role="field">Field observation</button><button type="button" data-role="care">Maintenance and care</button><div class="role-copy" data-role-copy><h3>Node operations</h3><p>Monitoring, access, backups, incident records, service priorities and recovery practice.</p></div></div></div></section>
 
@@ -704,6 +710,13 @@ function adventureProject() {
 
 function portal(href, title, copy) {
   return `<a class="portal-card" href="${href}"><span>${title}</span><p>${copy}</p><b aria-hidden="true">↗</b></a>`;
+}
+
+function participationSection() {
+  return `<section class="section section-sunrise" id="participate"><div class="wrap reveal">
+    <div class="section-heading dark-heading"><h2>Take part in Ready SETCO.</h2><p>Ready Sustainable Employment and Training Cooperative brings work, learning and local services into one shared proposal. Businesses, residents and community leaders have a common place to register interest.</p></div>
+    <div class="section-action-row"><p>Strange But True starts the practical services while the cooperative is being formed. Expressions of interest and formal cooperative membership have separate steps. Cultural decisions remain with the relevant people and relationships.</p><a class="button button-dark magnetic" href="${participationUrl}" target="_blank" rel="noopener noreferrer"><span>Ready SETCO sign-on</span></a></div>
+  </div></section>`;
 }
 
 function question(title, copy) {

@@ -21,6 +21,10 @@ S.E.T. means Sustainable Employment and Training. The cooperative is the work, l
 
 The wider body of work appears through links, especially the [filtered Project Atlas](https://auraofintelligence.github.io/project-atlas/?query=set&year=&family=&page=&connections=&sort=newest). This site stays with the single-node process.
 
+## Shared participation
+
+Home and Co-op layer link to the [Ready SETCO sign-on](https://ready-setco.auraofintelligence.workers.dev/join.html), the shared Cloudflare participation service used with the Trust Hub. This node site remains the public exploration; an expression of interest is separate from formal cooperative membership and does not grant access to cultural material.
+
 ## Public pages
 
 - [Home](https://auraofintelligence.github.io/ready-set-co-op-cultural-intelligence-node/)
